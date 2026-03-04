@@ -1,0 +1,30 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+
+# Data (don't commit the DB — it's auto-generated)
+data/news.db
+
+# ML models (large binary files)
+models/*.pkl
+models/*.npy
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code (keep .vscode/ tracked for team settings)
+# .vscode/
+
+# Logs
+*.log

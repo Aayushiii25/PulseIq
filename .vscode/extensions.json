@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.debugpy",
+    "ms-python.pylance",
+    "ms-python.black-formatter",
+    "tamasfe.even-better-toml",
+    "mtxr.sqltools",
+    "mtxr.sqltools-driver-sqlite",
+    "humao.rest-client",
+    "redhat.vscode-yaml",
+    "ms-vscode.makefile-tools"
+  ]
+}

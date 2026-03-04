@@ -1,0 +1,2362 @@
+[
+  {
+    "title": "Oracle Files for IPO, Seeking $61B Valuation",
+    "description": "Nvidia submitted its S-1 registration statement targeting a $8 billion valuation in what would be the year's largest technology IPO, with bookrunners set.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/ipo_ma/36_5_39571",
+    "published_at": "2026-02-04T23:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Qualcomm Q4 Profit Surges 5.0% on Cost Cuts and Pricing",
+    "description": "AMD said net income climbed 3.3% year-over-year as the company benefited from restructuring efforts and improved pricing power across its product lines.",
+    "source": "WSJ",
+    "url": "https://news.example.com/earnings/13_3_19269",
+    "published_at": "2026-02-27T08:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Inflation Data Shows CPI Rose 5.2% Year-Over-Year",
+    "description": "The Consumer Price Index rose 6.9% in the latest reading, slightly above analyst forecasts, keeping pressure on the Federal Reserve to maintain its restrictive stance.",
+    "source": "CNBC",
+    "url": "https://news.example.com/fed_rates/4_6_63626",
+    "published_at": "2026-02-17T05:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Basel III Capital Rules to Raise Bank Equity Requirements",
+    "description": "US regulators finalised updated Basel III endgame capital rules requiring the largest banks to hold significantly more equity, with the changes phased in over 4 years.",
+    "source": "FT",
+    "url": "https://news.example.com/banking/31_1_89505",
+    "published_at": "2026-02-22T18:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "HSBC Announces $25B Acquisition of CloudOps",
+    "description": "JPMorgan Chase agreed to acquire MediaTech for $77 billion in a cash-and-stock deal that will create one of the largest financial services groups in North America.",
+    "source": "Reuters",
+    "url": "https://news.example.com/banking/30_3_63095",
+    "published_at": "2026-02-10T08:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "S&P 500 Hits Record High Driven by Tech Rally",
+    "description": "The S&P 500 closed at a new all-time high of 5156, propelled by strong gains in mega-cap technology stocks amid optimism over AI spending.",
+    "source": "CNBC",
+    "url": "https://news.example.com/equities/5_6_93768",
+    "published_at": "2026-02-19T18:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Qualcomm Announces $34B Share Buyback Program",
+    "description": "Netflix unveiled a $15 billion share repurchase program, signaling confidence in its long-term growth trajectory and returning capital to shareholders.",
+    "source": "Reuters",
+    "url": "https://news.example.com/earnings/12_6_84838",
+    "published_at": "2026-02-11T06:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Unemployment Rate Falls to 5.9%, Wages Rise 4.5%",
+    "description": "The US economy added 236K jobs last month while the unemployment rate dipped to 4.6%, the lowest in 4 years, with average hourly earnings rising 5.6%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/macro/20_4_87493",
+    "published_at": "2026-02-12T08:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Dow Jones Drops 465 Points on Recession Fears",
+    "description": "US equities sold off sharply as weak manufacturing data stoked fears of an economic slowdown, with the Dow shedding 254 points in heavy trading.",
+    "source": "Reuters",
+    "url": "https://news.example.com/equities/6_2_21539",
+    "published_at": "2026-02-13T21:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "SEC Approves Additional Spot Bitcoin ETF Applications",
+    "description": "The Securities and Exchange Commission granted approval to 4 more spot Bitcoin ETF issuers, expanding investor access to regulated crypto products.",
+    "source": "Reuters",
+    "url": "https://news.example.com/crypto/16_7_49953",
+    "published_at": "2026-02-10T08:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "SEC Approves Additional Spot Bitcoin ETF Applications",
+    "description": "The Securities and Exchange Commission granted approval to 3 more spot Bitcoin ETF issuers, expanding investor access to regulated crypto products.",
+    "source": "Reuters",
+    "url": "https://news.example.com/crypto/16_2_59832",
+    "published_at": "2026-02-24T19:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Inflation Data Shows CPI Rose 6.3% Year-Over-Year",
+    "description": "The Consumer Price Index rose 6.7% in the latest reading, slightly above analyst forecasts, keeping pressure on the Federal Reserve to maintain its restrictive stance.",
+    "source": "CNBC",
+    "url": "https://news.example.com/fed_rates/4_2_40115",
+    "published_at": "2026-02-15T05:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Gold Hits Record $2662 as Dollar Weakens",
+    "description": "Gold futures surged to a record $2221 per troy ounce as the US dollar index fell 7.3% on softer economic data and rising safe-haven demand.",
+    "source": "FT",
+    "url": "https://news.example.com/energy/26_6_72210",
+    "published_at": "2026-02-18T22:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Stablecoin Regulation Bill Advances in Senate",
+    "description": "A bipartisan bill setting federal standards for stablecoin issuers cleared a key Senate committee hurdle, bringing the US closer to a comprehensive crypto regulatory framework.",
+    "source": "FT",
+    "url": "https://news.example.com/crypto/18_5_13360",
+    "published_at": "2026-02-04T20:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Basel III Capital Rules to Raise Bank Equity Requirements",
+    "description": "US regulators finalised updated Basel III endgame capital rules requiring the largest banks to hold significantly more equity, with the changes phased in over 3 years.",
+    "source": "FT",
+    "url": "https://news.example.com/banking/31_6_47893",
+    "published_at": "2026-02-08T04:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Crypto Market Cap Reaches $2.9T as Altcoins Rally",
+    "description": "Total crypto market capitalisation touched $2.3 trillion as Solana, Avalanche, and other layer-1 tokens posted double-digit percentage gains.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/crypto/17_3_33646",
+    "published_at": "2026-02-15T16:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Unemployment Rate Falls to 3.9%, Wages Rise 4.0%",
+    "description": "The US economy added 222K jobs last month while the unemployment rate dipped to 6.1%, the lowest in 5 years, with average hourly earnings rising 5.4%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/macro/20_0_18802",
+    "published_at": "2026-02-05T22:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Oil Prices Rise 4.1% as OPEC+ Extends Production Cuts",
+    "description": "WTI crude climbed to $82.3 per barrel after OPEC+ members agreed to extend voluntary production cuts of 2.0M barrels per day through the next quarter.",
+    "source": "Reuters",
+    "url": "https://news.example.com/energy/24_5_33984",
+    "published_at": "2026-02-08T23:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Netflix Misses Quarterly Revenue Targets, Shares Fall 4.4%",
+    "description": "JPMorgan reported Q2 revenue of $12.7B, missing Wall Street forecasts of $112.4B. The stock fell 6.1% in after-hours trading.",
+    "source": "CNBC",
+    "url": "https://news.example.com/earnings/11_5_90939",
+    "published_at": "2026-02-21T10:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Stablecoin Regulation Bill Advances in Senate",
+    "description": "A bipartisan bill setting federal standards for stablecoin issuers cleared a key Senate committee hurdle, bringing the US closer to a comprehensive crypto regulatory framework.",
+    "source": "FT",
+    "url": "https://news.example.com/crypto/18_3_88266",
+    "published_at": "2026-02-03T11:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Natural Gas Prices Plunge 7.5% on Mild Weather Forecasts",
+    "description": "Henry Hub natural gas futures fell sharply as above-average temperature forecasts for the Northeast reduced heating demand expectations heading into the shoulder season.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/energy/25_6_87704",
+    "published_at": "2026-02-05T18:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "SEC Approves Additional Spot Bitcoin ETF Applications",
+    "description": "The Securities and Exchange Commission granted approval to 3 more spot Bitcoin ETF issuers, expanding investor access to regulated crypto products.",
+    "source": "Reuters",
+    "url": "https://news.example.com/crypto/16_4_34233",
+    "published_at": "2026-02-05T10:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Wall Street Banks Cut Equity Forecasts Amid Uncertainty",
+    "description": "Major banks including Goldman Sachs and Morgan Stanley lowered their year-end S&P 500 targets citing macro headwinds and elevated valuations.",
+    "source": "FT",
+    "url": "https://news.example.com/equities/8_5_55523",
+    "published_at": "2026-02-11T02:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "S&P 500 Hits Record High Driven by Tech Rally",
+    "description": "The S&P 500 closed at a new all-time high of 5103, propelled by strong gains in mega-cap technology stocks amid optimism over AI spending.",
+    "source": "CNBC",
+    "url": "https://news.example.com/equities/5_4_22055",
+    "published_at": "2026-02-03T18:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "US Treasury Yields Rise After Strong Jobs Report",
+    "description": "10-year Treasury yields climbed to 4.66% as a robust payrolls report of 236K new jobs reduced expectations for near-term Fed rate cuts.",
+    "source": "FT",
+    "url": "https://news.example.com/fed_rates/3_5_98587",
+    "published_at": "2026-02-20T03:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Bank of America Announces $30B Acquisition of AutomateIQ",
+    "description": "Citigroup agreed to acquire DataBridge for $54 billion in a cash-and-stock deal that will create one of the largest financial services groups in North America.",
+    "source": "Reuters",
+    "url": "https://news.example.com/banking/30_0_57018",
+    "published_at": "2026-02-28T21:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Unemployment Rate Falls to 5.6%, Wages Rise 4.4%",
+    "description": "The US economy added 300K jobs last month while the unemployment rate dipped to 7.6%, the lowest in 5 years, with average hourly earnings rising 4.6%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/macro/20_5_71585",
+    "published_at": "2026-02-01T03:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "AI Infrastructure Spending to Reach $383B by 2027",
+    "description": "A new industry report projects global spending on AI data centres and infrastructure will hit $198 billion by 2026, driven by hyperscaler capital expenditure programmes.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/tech_ai/33_0_18776",
+    "published_at": "2026-02-26T08:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Dow Jones Drops 306 Points on Recession Fears",
+    "description": "US equities sold off sharply as weak manufacturing data stoked fears of an economic slowdown, with the Dow shedding 360 points in heavy trading.",
+    "source": "Reuters",
+    "url": "https://news.example.com/equities/6_5_21913",
+    "published_at": "2026-02-26T13:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "US GDP Growth Revised Up to 6.5% in Q3 Final Reading",
+    "description": "The Commerce Department's final estimate put Q3 GDP growth at an annualised 4.9%, above the preliminary figure, driven by consumer spending and business investment.",
+    "source": "Reuters",
+    "url": "https://news.example.com/macro/19_0_26591",
+    "published_at": "2026-02-01T20:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Regional Banks Face Deposit Outflow Pressure",
+    "description": "Several mid-sized US lenders reported accelerating deposit outflows as customers chased higher yields in money market funds, pressuring net interest margins.",
+    "source": "WSJ",
+    "url": "https://news.example.com/banking/29_1_82848",
+    "published_at": "2026-02-10T09:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Unemployment Rate Falls to 7.4%, Wages Rise 5.3%",
+    "description": "The US economy added 287K jobs last month while the unemployment rate dipped to 6.3%, the lowest in 3 years, with average hourly earnings rising 5.5%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/macro/20_7_77673",
+    "published_at": "2026-02-20T03:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Wall Street Banks Cut Equity Forecasts Amid Uncertainty",
+    "description": "Major banks including Goldman Sachs and Morgan Stanley lowered their year-end S&P 500 targets citing macro headwinds and elevated valuations.",
+    "source": "FT",
+    "url": "https://news.example.com/equities/8_0_40137",
+    "published_at": "2026-02-23T19:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Natural Gas Prices Plunge 5.6% on Mild Weather Forecasts",
+    "description": "Henry Hub natural gas futures fell sharply as above-average temperature forecasts for the Northeast reduced heating demand expectations heading into the shoulder season.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/energy/25_1_16669",
+    "published_at": "2026-02-10T21:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "JPMorgan Files for IPO, Seeking $119B Valuation",
+    "description": "Nvidia submitted its S-1 registration statement targeting a $83 billion valuation in what would be the year's largest technology IPO, with bookrunners set.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/ipo_ma/36_4_36104",
+    "published_at": "2026-02-16T12:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Qualcomm Misses Quarterly Revenue Targets, Shares Fall 5.5%",
+    "description": "Netflix reported Q3 revenue of $72.7B, missing Wall Street forecasts of $74.2B. The stock fell 6.3% in after-hours trading.",
+    "source": "CNBC",
+    "url": "https://news.example.com/earnings/11_3_17184",
+    "published_at": "2026-02-08T09:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Natural Gas Prices Plunge 3.2% on Mild Weather Forecasts",
+    "description": "Henry Hub natural gas futures fell sharply as above-average temperature forecasts for the Northeast reduced heating demand expectations heading into the shoulder season.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/energy/25_0_60600",
+    "published_at": "2026-02-02T12:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "US Shale Output Rises to 12.6M Barrels Per Day",
+    "description": "American oil production reached 13.1 million barrels per day, a record high, as drillers in the Permian Basin boosted activity in response to elevated prices.",
+    "source": "WSJ",
+    "url": "https://news.example.com/energy/27_0_58979",
+    "published_at": "2026-02-17T07:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Alphabet Launches Enterprise AI Platform, Signs 7 Fortune 500 Clients",
+    "description": "Apple's new AI-powered enterprise platform secured 2 Fortune 500 customers in its first month, generating $73.5M in annual recurring revenue commitments.",
+    "source": "TechCrunch",
+    "url": "https://news.example.com/tech_ai/34_0_12688",
+    "published_at": "2026-02-21T00:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Consumer Confidence Index Rises to 102.7, Highest Since 2027",
+    "description": "The Conference Board's Consumer Confidence Index jumped to 114.1 this month, the highest reading since 2027, as Americans grew more optimistic about labour market conditions.",
+    "source": "CNBC",
+    "url": "https://news.example.com/macro/23_4_26688",
+    "published_at": "2026-02-04T20:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "US Shale Output Rises to 12.8M Barrels Per Day",
+    "description": "American oil production reached 12.8 million barrels per day, a record high, as drillers in the Permian Basin boosted activity in response to elevated prices.",
+    "source": "WSJ",
+    "url": "https://news.example.com/energy/27_4_82540",
+    "published_at": "2026-02-08T22:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Wall Street Banks Cut Equity Forecasts Amid Uncertainty",
+    "description": "Major banks including Goldman Sachs and Morgan Stanley lowered their year-end S&P 500 targets citing macro headwinds and elevated valuations.",
+    "source": "FT",
+    "url": "https://news.example.com/equities/8_7_46170",
+    "published_at": "2026-02-15T20:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Broadcom Announces $43B Share Buyback Program",
+    "description": "JPMorgan unveiled a $15 billion share repurchase program, signaling confidence in its long-term growth trajectory and returning capital to shareholders.",
+    "source": "Reuters",
+    "url": "https://news.example.com/earnings/12_1_83224",
+    "published_at": "2026-02-10T20:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Netflix Launches Enterprise AI Platform, Signs 4 Fortune 500 Clients",
+    "description": "Netflix's new AI-powered enterprise platform secured 4 Fortune 500 customers in its first month, generating $81.0M in annual recurring revenue commitments.",
+    "source": "TechCrunch",
+    "url": "https://news.example.com/tech_ai/34_7_49468",
+    "published_at": "2026-02-16T16:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Tesla Reports Q4 Earnings Beat, Raises Full-Year Guidance",
+    "description": "AMD posted earnings per share of $4.62, beating analyst estimates of $4.59, and raised full-year revenue guidance by 6.0% citing strong demand.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/earnings/10_3_43036",
+    "published_at": "2026-02-28T14:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Natural Gas Prices Plunge 2.9% on Mild Weather Forecasts",
+    "description": "Henry Hub natural gas futures fell sharply as above-average temperature forecasts for the Northeast reduced heating demand expectations heading into the shoulder season.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/energy/25_4_34817",
+    "published_at": "2026-02-23T10:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Netflix Files for IPO, Seeking $87B Valuation",
+    "description": "Oracle submitted its S-1 registration statement targeting a $47 billion valuation in what would be the year's largest technology IPO, with bookrunners set.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/ipo_ma/36_6_93422",
+    "published_at": "2026-02-23T19:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Bitcoin Surges Past $104K on ETF Inflow Optimism",
+    "description": "Bitcoin climbed to $103,000 as spot ETF products attracted over $4.4B in net inflows this week, driving institutional buying momentum.",
+    "source": "CoinDesk",
+    "url": "https://news.example.com/crypto/14_0_75991",
+    "published_at": "2026-02-02T10:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Ethereum Upgrade Reduces Gas Fees by 2.5%, Boosts DeFi Activity",
+    "description": "The latest Ethereum network upgrade cut average transaction costs by 4.3%, spurring a wave of activity on decentralised finance platforms.",
+    "source": "The Block",
+    "url": "https://news.example.com/crypto/15_7_67186",
+    "published_at": "2026-02-03T15:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Stablecoin Regulation Bill Advances in Senate",
+    "description": "A bipartisan bill setting federal standards for stablecoin issuers cleared a key Senate committee hurdle, bringing the US closer to a comprehensive crypto regulatory framework.",
+    "source": "FT",
+    "url": "https://news.example.com/crypto/18_2_97706",
+    "published_at": "2026-02-15T04:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Regional Banks Face Deposit Outflow Pressure",
+    "description": "Several mid-sized US lenders reported accelerating deposit outflows as customers chased higher yields in money market funds, pressuring net interest margins.",
+    "source": "WSJ",
+    "url": "https://news.example.com/banking/29_2_53457",
+    "published_at": "2026-02-17T23:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Powell Warns of Higher-for-Longer Rate Environment",
+    "description": "Fed Chair Jerome Powell cautioned that interest rates may need to remain elevated until core inflation sustainably returns to the 2% target.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/fed_rates/1_6_86435",
+    "published_at": "2026-02-23T07:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Crypto Market Cap Reaches $2.8T as Altcoins Rally",
+    "description": "Total crypto market capitalisation touched $2.0 trillion as Solana, Avalanche, and other layer-1 tokens posted double-digit percentage gains.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/crypto/17_4_46937",
+    "published_at": "2026-02-21T09:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Oil Prices Rise 3.1% as OPEC+ Extends Production Cuts",
+    "description": "WTI crude climbed to $73.2 per barrel after OPEC+ members agreed to extend voluntary production cuts of 2.2M barrels per day through the next quarter.",
+    "source": "Reuters",
+    "url": "https://news.example.com/energy/24_1_92384",
+    "published_at": "2026-02-28T16:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Powell Warns of Higher-for-Longer Rate Environment",
+    "description": "Fed Chair Jerome Powell cautioned that interest rates may need to remain elevated until core inflation sustainably returns to the 2% target.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/fed_rates/1_5_34727",
+    "published_at": "2026-02-22T12:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Basel III Capital Rules to Raise Bank Equity Requirements",
+    "description": "US regulators finalised updated Basel III endgame capital rules requiring the largest banks to hold significantly more equity, with the changes phased in over 3 years.",
+    "source": "FT",
+    "url": "https://news.example.com/banking/31_2_98268",
+    "published_at": "2026-02-26T21:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Amazon Launches Enterprise AI Platform, Signs 8 Fortune 500 Clients",
+    "description": "Broadcom's new AI-powered enterprise platform secured 5 Fortune 500 customers in its first month, generating $26.7M in annual recurring revenue commitments.",
+    "source": "TechCrunch",
+    "url": "https://news.example.com/tech_ai/34_1_16085",
+    "published_at": "2026-02-01T12:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Microsoft Reports Q2 Earnings Beat, Raises Full-Year Guidance",
+    "description": "Amazon posted earnings per share of $6.33, beating analyst estimates of $3.76, and raised full-year revenue guidance by 7.6% citing strong demand.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/earnings/10_2_64507",
+    "published_at": "2026-02-06T09:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "SPAC Activity Picks Up as 8 Blank-Check Deals Announced",
+    "description": "Special purpose acquisition company activity rebounded with 7 new SPAC formations announced this month, the highest monthly count since the 2021 peak.",
+    "source": "Reuters",
+    "url": "https://news.example.com/ipo_ma/39_0_91448",
+    "published_at": "2026-02-17T04:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Inflation Data Shows CPI Rose 4.5% Year-Over-Year",
+    "description": "The Consumer Price Index rose 7.8% in the latest reading, slightly above analyst forecasts, keeping pressure on the Federal Reserve to maintain its restrictive stance.",
+    "source": "CNBC",
+    "url": "https://news.example.com/fed_rates/4_7_45221",
+    "published_at": "2026-02-22T15:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Inflation Data Shows CPI Rose 5.9% Year-Over-Year",
+    "description": "The Consumer Price Index rose 6.4% in the latest reading, slightly above analyst forecasts, keeping pressure on the Federal Reserve to maintain its restrictive stance.",
+    "source": "CNBC",
+    "url": "https://news.example.com/fed_rates/4_5_41970",
+    "published_at": "2026-02-27T13:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Meta Agrees to Buy Startup AI for $46B in All-Cash Deal",
+    "description": "IBM announced a definitive agreement to acquire DataBridge for $39 billion in cash, a 39% premium to the 30-day volume-weighted average price.",
+    "source": "WSJ",
+    "url": "https://news.example.com/ipo_ma/37_1_62542",
+    "published_at": "2026-02-01T17:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Fed Minutes Reveal Split on Timing of First Rate Cut",
+    "description": "Minutes from the latest FOMC meeting show policymakers divided on when to begin cutting the federal funds rate, currently at 4.25%.",
+    "source": "WSJ",
+    "url": "https://news.example.com/fed_rates/2_4_94599",
+    "published_at": "2026-02-22T13:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Oil Prices Rise 3.5% as OPEC+ Extends Production Cuts",
+    "description": "WTI crude climbed to $76.2 per barrel after OPEC+ members agreed to extend voluntary production cuts of 0.9M barrels per day through the next quarter.",
+    "source": "Reuters",
+    "url": "https://news.example.com/energy/24_7_36687",
+    "published_at": "2026-02-12T04:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Crypto Market Cap Reaches $2.1T as Altcoins Rally",
+    "description": "Total crypto market capitalisation touched $3.1 trillion as Solana, Avalanche, and other layer-1 tokens posted double-digit percentage gains.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/crypto/17_2_77213",
+    "published_at": "2026-02-11T11:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "SEC Approves Additional Spot Bitcoin ETF Applications",
+    "description": "The Securities and Exchange Commission granted approval to 2 more spot Bitcoin ETF issuers, expanding investor access to regulated crypto products.",
+    "source": "Reuters",
+    "url": "https://news.example.com/crypto/16_5_28775",
+    "published_at": "2026-02-13T22:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Cisco Agrees to Buy FinTech Pro for $82B in All-Cash Deal",
+    "description": "Alphabet announced a definitive agreement to acquire Startup AI for $37 billion in cash, a 41% premium to the 30-day volume-weighted average price.",
+    "source": "WSJ",
+    "url": "https://news.example.com/ipo_ma/37_5_29373",
+    "published_at": "2026-02-10T19:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Powell Warns of Higher-for-Longer Rate Environment",
+    "description": "Fed Chair Jerome Powell cautioned that interest rates may need to remain elevated until core inflation sustainably returns to the 2% target.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/fed_rates/1_3_37235",
+    "published_at": "2026-02-12T15:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "US Treasury Yields Rise After Strong Jobs Report",
+    "description": "10-year Treasury yields climbed to 4.73% as a robust payrolls report of 248K new jobs reduced expectations for near-term Fed rate cuts.",
+    "source": "FT",
+    "url": "https://news.example.com/fed_rates/3_3_19564",
+    "published_at": "2026-02-01T11:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "IMF Cuts Global Growth Forecast to 2.5% Amid Trade Tensions",
+    "description": "The International Monetary Fund lowered its world growth projection to 2.8% for the year, citing tightening financial conditions and persistent geopolitical uncertainty.",
+    "source": "FT",
+    "url": "https://news.example.com/macro/21_0_90052",
+    "published_at": "2026-02-01T13:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Ethereum Upgrade Reduces Gas Fees by 2.6%, Boosts DeFi Activity",
+    "description": "The latest Ethereum network upgrade cut average transaction costs by 6.0%, spurring a wave of activity on decentralised finance platforms.",
+    "source": "The Block",
+    "url": "https://news.example.com/crypto/15_2_85695",
+    "published_at": "2026-02-09T17:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Oracle Reports Q1 Earnings Beat, Raises Full-Year Guidance",
+    "description": "Tesla posted earnings per share of $3.58, beating analyst estimates of $5.55, and raised full-year revenue guidance by 4.7% citing strong demand.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/earnings/10_1_68355",
+    "published_at": "2026-02-19T20:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Fed Minutes Reveal Split on Timing of First Rate Cut",
+    "description": "Minutes from the latest FOMC meeting show policymakers divided on when to begin cutting the federal funds rate, currently at 5.25%.",
+    "source": "WSJ",
+    "url": "https://news.example.com/fed_rates/2_0_98395",
+    "published_at": "2026-02-08T14:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Consumer Confidence Index Rises to 99.3, Highest Since 2029",
+    "description": "The Conference Board's Consumer Confidence Index jumped to 108.3 this month, the highest reading since 2028, as Americans grew more optimistic about labour market conditions.",
+    "source": "CNBC",
+    "url": "https://news.example.com/macro/23_3_28385",
+    "published_at": "2026-02-14T12:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Meta Misses Quarterly Revenue Targets, Shares Fall 4.2%",
+    "description": "Broadcom reported Q4 revenue of $29.7B, missing Wall Street forecasts of $115.4B. The stock fell 6.0% in after-hours trading.",
+    "source": "CNBC",
+    "url": "https://news.example.com/earnings/11_4_78107",
+    "published_at": "2026-02-17T21:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Fed Signals Pause in Rate Hikes as Inflation Eases to 7.0%",
+    "description": "Federal Reserve officials indicated they may hold interest rates steady at 5.25% after inflation data showed a cooling trend, giving markets relief.",
+    "source": "Reuters",
+    "url": "https://news.example.com/fed_rates/0_5_67954",
+    "published_at": "2026-02-13T01:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Oil Prices Rise 5.3% as OPEC+ Extends Production Cuts",
+    "description": "WTI crude climbed to $75.1 per barrel after OPEC+ members agreed to extend voluntary production cuts of 1.2M barrels per day through the next quarter.",
+    "source": "Reuters",
+    "url": "https://news.example.com/energy/24_4_89179",
+    "published_at": "2026-02-23T20:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Natural Gas Prices Plunge 6.5% on Mild Weather Forecasts",
+    "description": "Henry Hub natural gas futures fell sharply as above-average temperature forecasts for the Northeast reduced heating demand expectations heading into the shoulder season.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/energy/25_3_63371",
+    "published_at": "2026-02-16T05:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Nasdaq 100 Surges 3.3% as Earnings Beat Estimates",
+    "description": "Technology stocks led markets higher after a wave of better-than-expected quarterly earnings reports, pushing the Nasdaq 100 up 4.7%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/equities/7_0_27481",
+    "published_at": "2026-02-17T17:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Salesforce Agrees to Buy DataBridge for $81B in All-Cash Deal",
+    "description": "Alphabet announced a definitive agreement to acquire Startup AI for $52 billion in cash, a 45% premium to the 30-day volume-weighted average price.",
+    "source": "WSJ",
+    "url": "https://news.example.com/ipo_ma/37_0_39024",
+    "published_at": "2026-02-25T14:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Wall Street Banks Cut Equity Forecasts Amid Uncertainty",
+    "description": "Major banks including Goldman Sachs and Morgan Stanley lowered their year-end S&P 500 targets citing macro headwinds and elevated valuations.",
+    "source": "FT",
+    "url": "https://news.example.com/equities/8_3_57943",
+    "published_at": "2026-02-26T10:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Unemployment Rate Falls to 2.8%, Wages Rise 5.3%",
+    "description": "The US economy added 309K jobs last month while the unemployment rate dipped to 5.0%, the lowest in 2 years, with average hourly earnings rising 4.0%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/macro/20_6_44003",
+    "published_at": "2026-02-24T03:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Oil Prices Rise 2.7% as OPEC+ Extends Production Cuts",
+    "description": "WTI crude climbed to $77.2 per barrel after OPEC+ members agreed to extend voluntary production cuts of 1.5M barrels per day through the next quarter.",
+    "source": "Reuters",
+    "url": "https://news.example.com/energy/24_0_20874",
+    "published_at": "2026-02-10T19:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Microsoft Q4 Profit Surges 2.2% on Cost Cuts and Pricing",
+    "description": "Nvidia said net income climbed 6.3% year-over-year as the company benefited from restructuring efforts and improved pricing power across its product lines.",
+    "source": "WSJ",
+    "url": "https://news.example.com/earnings/13_5_48644",
+    "published_at": "2026-02-25T16:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Goldman Sachs Announces $15B Acquisition of MediaTech",
+    "description": "Wells Fargo agreed to acquire FinTech Pro for $66 billion in a cash-and-stock deal that will create one of the largest financial services groups in North America.",
+    "source": "Reuters",
+    "url": "https://news.example.com/banking/30_7_97728",
+    "published_at": "2026-02-03T10:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Volatility Index Spikes as Markets React to Geopolitical Risk",
+    "description": "The VIX fear gauge surged above 21 as investors moved to defensive positions following escalating international tensions affecting global trade.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/equities/9_1_24141",
+    "published_at": "2026-02-16T17:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "US Manufacturing PMI Contracts for 9th Consecutive Month",
+    "description": "The ISM Manufacturing PMI fell to 44.1, below the 50-point threshold for the 6th month running, indicating contraction in the sector.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/macro/22_2_95576",
+    "published_at": "2026-02-20T14:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Fed Signals Pause in Rate Hikes as Inflation Eases to 3.7%",
+    "description": "Federal Reserve officials indicated they may hold interest rates steady at 5.0% after inflation data showed a cooling trend, giving markets relief.",
+    "source": "Reuters",
+    "url": "https://news.example.com/fed_rates/0_0_14207",
+    "published_at": "2026-02-01T23:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "JPMorgan Unveils Next-Gen AI Chip, Shares Jump 5.2%",
+    "description": "Broadcom announced its latest AI accelerator chip delivering 4x the performance of the previous generation, sending shares up 4.8% and lifting the broader semiconductor sector.",
+    "source": "CNBC",
+    "url": "https://news.example.com/tech_ai/32_2_18563",
+    "published_at": "2026-02-14T08:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Gold Hits Record $2469 as Dollar Weakens",
+    "description": "Gold futures surged to a record $2690 per troy ounce as the US dollar index fell 2.2% on softer economic data and rising safe-haven demand.",
+    "source": "FT",
+    "url": "https://news.example.com/energy/26_3_16198",
+    "published_at": "2026-02-28T00:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "SPAC Activity Picks Up as 6 Blank-Check Deals Announced",
+    "description": "Special purpose acquisition company activity rebounded with 5 new SPAC formations announced this month, the highest monthly count since the 2021 peak.",
+    "source": "Reuters",
+    "url": "https://news.example.com/ipo_ma/39_2_93379",
+    "published_at": "2026-02-17T08:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "US Manufacturing PMI Contracts for 8th Consecutive Month",
+    "description": "The ISM Manufacturing PMI fell to 44.5, below the 50-point threshold for the 2th month running, indicating contraction in the sector.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/macro/22_0_37851",
+    "published_at": "2026-02-06T13:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Oracle Reports Q3 Earnings Beat, Raises Full-Year Guidance",
+    "description": "Alphabet posted earnings per share of $3.99, beating analyst estimates of $3.33, and raised full-year revenue guidance by 6.5% citing strong demand.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/earnings/10_5_10113",
+    "published_at": "2026-02-22T00:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Meta Reports Q2 Earnings Beat, Raises Full-Year Guidance",
+    "description": "Alphabet posted earnings per share of $5.07, beating analyst estimates of $4.04, and raised full-year revenue guidance by 3.8% citing strong demand.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/earnings/10_4_11386",
+    "published_at": "2026-02-05T19:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Inflation Data Shows CPI Rose 4.1% Year-Over-Year",
+    "description": "The Consumer Price Index rose 6.9% in the latest reading, slightly above analyst forecasts, keeping pressure on the Federal Reserve to maintain its restrictive stance.",
+    "source": "CNBC",
+    "url": "https://news.example.com/fed_rates/4_4_19064",
+    "published_at": "2026-02-01T02:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Wall Street Banks Cut Equity Forecasts Amid Uncertainty",
+    "description": "Major banks including Goldman Sachs and Morgan Stanley lowered their year-end S&P 500 targets citing macro headwinds and elevated valuations.",
+    "source": "FT",
+    "url": "https://news.example.com/equities/8_2_93962",
+    "published_at": "2026-02-28T08:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "PE Firm Warburg Pincus Raises $67B Buyout Fund, Largest Ever",
+    "description": "Private equity giant Silver Lake closed its latest flagship buyout fund at $20 billion, surpassing its target and making it the largest PE fund ever raised.",
+    "source": "FT",
+    "url": "https://news.example.com/ipo_ma/38_2_55758",
+    "published_at": "2026-02-15T03:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Semiconductor Stocks Rally on Strong AI Demand Data",
+    "description": "Shares of chip designers and equipment makers surged after industry data showed AI-related chip orders up 6.9% quarter-over-quarter, far exceeding analyst expectations.",
+    "source": "Reuters",
+    "url": "https://news.example.com/tech_ai/35_5_52894",
+    "published_at": "2026-02-06T04:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "US Shale Output Rises to 13.3M Barrels Per Day",
+    "description": "American oil production reached 13.5 million barrels per day, a record high, as drillers in the Permian Basin boosted activity in response to elevated prices.",
+    "source": "WSJ",
+    "url": "https://news.example.com/energy/27_8_18512",
+    "published_at": "2026-02-06T19:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "SEC Approves Additional Spot Bitcoin ETF Applications",
+    "description": "The Securities and Exchange Commission granted approval to 4 more spot Bitcoin ETF issuers, expanding investor access to regulated crypto products.",
+    "source": "Reuters",
+    "url": "https://news.example.com/crypto/16_3_22755",
+    "published_at": "2026-02-19T23:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Semiconductor Stocks Rally on Strong AI Demand Data",
+    "description": "Shares of chip designers and equipment makers surged after industry data showed AI-related chip orders up 5.3% quarter-over-quarter, far exceeding analyst expectations.",
+    "source": "Reuters",
+    "url": "https://news.example.com/tech_ai/35_4_83578",
+    "published_at": "2026-02-07T01:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Volatility Index Spikes as Markets React to Geopolitical Risk",
+    "description": "The VIX fear gauge surged above 22 as investors moved to defensive positions following escalating international tensions affecting global trade.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/equities/9_2_51771",
+    "published_at": "2026-02-01T09:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "US Manufacturing PMI Contracts for 3th Consecutive Month",
+    "description": "The ISM Manufacturing PMI fell to 48.8, below the 50-point threshold for the 8th month running, indicating contraction in the sector.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/macro/22_4_95736",
+    "published_at": "2026-02-06T19:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Nasdaq 100 Surges 4.5% as Earnings Beat Estimates",
+    "description": "Technology stocks led markets higher after a wave of better-than-expected quarterly earnings reports, pushing the Nasdaq 100 up 6.6%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/equities/7_6_73192",
+    "published_at": "2026-02-22T07:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "US Treasury Yields Rise After Strong Jobs Report",
+    "description": "10-year Treasury yields climbed to 3.84% as a robust payrolls report of 217K new jobs reduced expectations for near-term Fed rate cuts.",
+    "source": "FT",
+    "url": "https://news.example.com/fed_rates/3_1_56077",
+    "published_at": "2026-02-18T00:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "PE Firm Apollo Raises $64B Buyout Fund, Largest Ever",
+    "description": "Private equity giant KKR closed its latest flagship buyout fund at $23 billion, surpassing its target and making it the largest PE fund ever raised.",
+    "source": "FT",
+    "url": "https://news.example.com/ipo_ma/38_8_26749",
+    "published_at": "2026-02-09T09:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Semiconductor Stocks Rally on Strong AI Demand Data",
+    "description": "Shares of chip designers and equipment makers surged after industry data showed AI-related chip orders up 3.1% quarter-over-quarter, far exceeding analyst expectations.",
+    "source": "Reuters",
+    "url": "https://news.example.com/tech_ai/35_1_62598",
+    "published_at": "2026-02-18T21:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Broadcom Misses Quarterly Revenue Targets, Shares Fall 4.8%",
+    "description": "Nvidia reported Q1 revenue of $51.4B, missing Wall Street forecasts of $27.4B. The stock fell 4.5% in after-hours trading.",
+    "source": "CNBC",
+    "url": "https://news.example.com/earnings/11_1_49478",
+    "published_at": "2026-02-21T00:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Consumer Confidence Index Rises to 100.9, Highest Since 2027",
+    "description": "The Conference Board's Consumer Confidence Index jumped to 103.0 this month, the highest reading since 2026, as Americans grew more optimistic about labour market conditions.",
+    "source": "CNBC",
+    "url": "https://news.example.com/macro/23_2_52184",
+    "published_at": "2026-02-10T20:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Stablecoin Regulation Bill Advances in Senate",
+    "description": "A bipartisan bill setting federal standards for stablecoin issuers cleared a key Senate committee hurdle, bringing the US closer to a comprehensive crypto regulatory framework.",
+    "source": "FT",
+    "url": "https://news.example.com/crypto/18_4_81399",
+    "published_at": "2026-02-07T02:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Consumer Confidence Index Rises to 111.3, Highest Since 2027",
+    "description": "The Conference Board's Consumer Confidence Index jumped to 103.8 this month, the highest reading since 2030, as Americans grew more optimistic about labour market conditions.",
+    "source": "CNBC",
+    "url": "https://news.example.com/macro/23_1_75937",
+    "published_at": "2026-02-24T06:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Netflix Announces $9B Share Buyback Program",
+    "description": "Salesforce unveiled a $29 billion share repurchase program, signaling confidence in its long-term growth trajectory and returning capital to shareholders.",
+    "source": "Reuters",
+    "url": "https://news.example.com/earnings/12_4_55727",
+    "published_at": "2026-02-20T12:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Oil Prices Rise 4.1% as OPEC+ Extends Production Cuts",
+    "description": "WTI crude climbed to $76.4 per barrel after OPEC+ members agreed to extend voluntary production cuts of 1.1M barrels per day through the next quarter.",
+    "source": "Reuters",
+    "url": "https://news.example.com/energy/24_6_42272",
+    "published_at": "2026-02-04T09:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Bitcoin Surges Past $59K on ETF Inflow Optimism",
+    "description": "Bitcoin climbed to $86,000 as spot ETF products attracted over $0.6B in net inflows this week, driving institutional buying momentum.",
+    "source": "CoinDesk",
+    "url": "https://news.example.com/crypto/14_6_91951",
+    "published_at": "2026-02-09T19:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Fed Minutes Reveal Split on Timing of First Rate Cut",
+    "description": "Minutes from the latest FOMC meeting show policymakers divided on when to begin cutting the federal funds rate, currently at 5.25%.",
+    "source": "WSJ",
+    "url": "https://news.example.com/fed_rates/2_3_68079",
+    "published_at": "2026-02-22T08:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "US Shale Output Rises to 13.4M Barrels Per Day",
+    "description": "American oil production reached 12.9 million barrels per day, a record high, as drillers in the Permian Basin boosted activity in response to elevated prices.",
+    "source": "WSJ",
+    "url": "https://news.example.com/energy/27_6_35733",
+    "published_at": "2026-02-21T09:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Nasdaq 100 Surges 5.5% as Earnings Beat Estimates",
+    "description": "Technology stocks led markets higher after a wave of better-than-expected quarterly earnings reports, pushing the Nasdaq 100 up 2.5%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/equities/7_2_95397",
+    "published_at": "2026-02-18T23:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Bitcoin Surges Past $73K on ETF Inflow Optimism",
+    "description": "Bitcoin climbed to $88,000 as spot ETF products attracted over $2.6B in net inflows this week, driving institutional buying momentum.",
+    "source": "CoinDesk",
+    "url": "https://news.example.com/crypto/14_4_33659",
+    "published_at": "2026-02-14T01:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Volatility Index Spikes as Markets React to Geopolitical Risk",
+    "description": "The VIX fear gauge surged above 30 as investors moved to defensive positions following escalating international tensions affecting global trade.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/equities/9_4_87183",
+    "published_at": "2026-02-15T12:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "PE Firm Carlyle Raises $25B Buyout Fund, Largest Ever",
+    "description": "Private equity giant Blackstone closed its latest flagship buyout fund at $52 billion, surpassing its target and making it the largest PE fund ever raised.",
+    "source": "FT",
+    "url": "https://news.example.com/ipo_ma/38_5_77000",
+    "published_at": "2026-02-10T04:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "S&P 500 Hits Record High Driven by Tech Rally",
+    "description": "The S&P 500 closed at a new all-time high of 5602, propelled by strong gains in mega-cap technology stocks amid optimism over AI spending.",
+    "source": "CNBC",
+    "url": "https://news.example.com/equities/5_1_64451",
+    "published_at": "2026-02-24T03:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Natural Gas Prices Plunge 4.0% on Mild Weather Forecasts",
+    "description": "Henry Hub natural gas futures fell sharply as above-average temperature forecasts for the Northeast reduced heating demand expectations heading into the shoulder season.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/energy/25_2_59724",
+    "published_at": "2026-02-07T06:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "PE Firm Vista Equity Raises $35B Buyout Fund, Largest Ever",
+    "description": "Private equity giant Blackstone closed its latest flagship buyout fund at $32 billion, surpassing its target and making it the largest PE fund ever raised.",
+    "source": "FT",
+    "url": "https://news.example.com/ipo_ma/38_3_60001",
+    "published_at": "2026-02-07T16:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "AI Infrastructure Spending to Reach $394B by 2030",
+    "description": "A new industry report projects global spending on AI data centres and infrastructure will hit $247 billion by 2029, driven by hyperscaler capital expenditure programmes.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/tech_ai/33_3_34480",
+    "published_at": "2026-02-14T21:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "IMF Cuts Global Growth Forecast to 4.0% Amid Trade Tensions",
+    "description": "The International Monetary Fund lowered its world growth projection to 5.6% for the year, citing tightening financial conditions and persistent geopolitical uncertainty.",
+    "source": "FT",
+    "url": "https://news.example.com/macro/21_4_11703",
+    "published_at": "2026-02-21T12:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Oil Prices Rise 6.2% as OPEC+ Extends Production Cuts",
+    "description": "WTI crude climbed to $70.4 per barrel after OPEC+ members agreed to extend voluntary production cuts of 1.3M barrels per day through the next quarter.",
+    "source": "Reuters",
+    "url": "https://news.example.com/energy/24_3_76338",
+    "published_at": "2026-02-14T12:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "PE Firm Blackstone Raises $56B Buyout Fund, Largest Ever",
+    "description": "Private equity giant Silver Lake closed its latest flagship buyout fund at $41 billion, surpassing its target and making it the largest PE fund ever raised.",
+    "source": "FT",
+    "url": "https://news.example.com/ipo_ma/38_0_66387",
+    "published_at": "2026-02-14T18:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "IBM Agrees to Buy AutomateIQ for $50B in All-Cash Deal",
+    "description": "Alphabet announced a definitive agreement to acquire MediaTech for $12 billion in cash, a 54% premium to the 30-day volume-weighted average price.",
+    "source": "WSJ",
+    "url": "https://news.example.com/ipo_ma/37_4_77725",
+    "published_at": "2026-02-16T06:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Broadcom Files for IPO, Seeking $44B Valuation",
+    "description": "Microsoft submitted its S-1 registration statement targeting a $21 billion valuation in what would be the year's largest technology IPO, with bookrunners set.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/ipo_ma/36_1_24338",
+    "published_at": "2026-02-27T15:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "US Treasury Yields Rise After Strong Jobs Report",
+    "description": "10-year Treasury yields climbed to 4.0% as a robust payrolls report of 318K new jobs reduced expectations for near-term Fed rate cuts.",
+    "source": "FT",
+    "url": "https://news.example.com/fed_rates/3_2_74752",
+    "published_at": "2026-02-15T01:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "JPMorgan Launches Enterprise AI Platform, Signs 9 Fortune 500 Clients",
+    "description": "JPMorgan's new AI-powered enterprise platform secured 9 Fortune 500 customers in its first month, generating $90.3M in annual recurring revenue commitments.",
+    "source": "TechCrunch",
+    "url": "https://news.example.com/tech_ai/34_2_86268",
+    "published_at": "2026-02-08T07:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Gold Hits Record $2260 as Dollar Weakens",
+    "description": "Gold futures surged to a record $2280 per troy ounce as the US dollar index fell 7.6% on softer economic data and rising safe-haven demand.",
+    "source": "FT",
+    "url": "https://news.example.com/energy/26_0_26847",
+    "published_at": "2026-02-27T07:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "US Shale Output Rises to 12.9M Barrels Per Day",
+    "description": "American oil production reached 13.4 million barrels per day, a record high, as drillers in the Permian Basin boosted activity in response to elevated prices.",
+    "source": "WSJ",
+    "url": "https://news.example.com/energy/27_1_48668",
+    "published_at": "2026-02-13T14:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Oil Prices Rise 5.4% as OPEC+ Extends Production Cuts",
+    "description": "WTI crude climbed to $74.9 per barrel after OPEC+ members agreed to extend voluntary production cuts of 1.9M barrels per day through the next quarter.",
+    "source": "Reuters",
+    "url": "https://news.example.com/energy/24_8_24602",
+    "published_at": "2026-02-16T06:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Inflation Data Shows CPI Rose 7.2% Year-Over-Year",
+    "description": "The Consumer Price Index rose 6.5% in the latest reading, slightly above analyst forecasts, keeping pressure on the Federal Reserve to maintain its restrictive stance.",
+    "source": "CNBC",
+    "url": "https://news.example.com/fed_rates/4_3_23538",
+    "published_at": "2026-02-07T22:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "IMF Cuts Global Growth Forecast to 2.3% Amid Trade Tensions",
+    "description": "The International Monetary Fund lowered its world growth projection to 7.7% for the year, citing tightening financial conditions and persistent geopolitical uncertainty.",
+    "source": "FT",
+    "url": "https://news.example.com/macro/21_5_25238",
+    "published_at": "2026-02-20T08:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "PE Firm KKR Raises $56B Buyout Fund, Largest Ever",
+    "description": "Private equity giant Blackstone closed its latest flagship buyout fund at $36 billion, surpassing its target and making it the largest PE fund ever raised.",
+    "source": "FT",
+    "url": "https://news.example.com/ipo_ma/38_6_22103",
+    "published_at": "2026-02-24T07:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Basel III Capital Rules to Raise Bank Equity Requirements",
+    "description": "US regulators finalised updated Basel III endgame capital rules requiring the largest banks to hold significantly more equity, with the changes phased in over 3 years.",
+    "source": "FT",
+    "url": "https://news.example.com/banking/31_5_78762",
+    "published_at": "2026-02-26T16:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "US GDP Growth Revised Up to 6.6% in Q2 Final Reading",
+    "description": "The Commerce Department's final estimate put Q1 GDP growth at an annualised 6.5%, above the preliminary figure, driven by consumer spending and business investment.",
+    "source": "Reuters",
+    "url": "https://news.example.com/macro/19_6_81543",
+    "published_at": "2026-02-04T13:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Meta Agrees to Buy SecureNet for $41B in All-Cash Deal",
+    "description": "Alphabet announced a definitive agreement to acquire CloudOps for $84 billion in cash, a 53% premium to the 30-day volume-weighted average price.",
+    "source": "WSJ",
+    "url": "https://news.example.com/ipo_ma/37_3_81212",
+    "published_at": "2026-02-23T21:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "IMF Cuts Global Growth Forecast to 7.3% Amid Trade Tensions",
+    "description": "The International Monetary Fund lowered its world growth projection to 4.9% for the year, citing tightening financial conditions and persistent geopolitical uncertainty.",
+    "source": "FT",
+    "url": "https://news.example.com/macro/21_2_32376",
+    "published_at": "2026-02-16T09:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Natural Gas Prices Plunge 6.1% on Mild Weather Forecasts",
+    "description": "Henry Hub natural gas futures fell sharply as above-average temperature forecasts for the Northeast reduced heating demand expectations heading into the shoulder season.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/energy/25_5_32646",
+    "published_at": "2026-02-23T03:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Semiconductor Stocks Rally on Strong AI Demand Data",
+    "description": "Shares of chip designers and equipment makers surged after industry data showed AI-related chip orders up 2.1% quarter-over-quarter, far exceeding analyst expectations.",
+    "source": "Reuters",
+    "url": "https://news.example.com/tech_ai/35_2_95463",
+    "published_at": "2026-02-22T01:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Amazon Misses Quarterly Revenue Targets, Shares Fall 2.1%",
+    "description": "Amazon reported Q1 revenue of $91.2B, missing Wall Street forecasts of $105.7B. The stock fell 3.4% in after-hours trading.",
+    "source": "CNBC",
+    "url": "https://news.example.com/earnings/11_2_55033",
+    "published_at": "2026-02-12T13:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Gold Hits Record $2462 as Dollar Weakens",
+    "description": "Gold futures surged to a record $2711 per troy ounce as the US dollar index fell 7.4% on softer economic data and rising safe-haven demand.",
+    "source": "FT",
+    "url": "https://news.example.com/energy/26_2_16557",
+    "published_at": "2026-02-07T18:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Consumer Confidence Index Rises to 114.0, Highest Since 2030",
+    "description": "The Conference Board's Consumer Confidence Index jumped to 98.2 this month, the highest reading since 2028, as Americans grew more optimistic about labour market conditions.",
+    "source": "CNBC",
+    "url": "https://news.example.com/macro/23_5_28378",
+    "published_at": "2026-02-18T11:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "AMD Unveils Next-Gen AI Chip, Shares Jump 2.6%",
+    "description": "Nvidia announced its latest AI accelerator chip delivering 3x the performance of the previous generation, sending shares up 5.3% and lifting the broader semiconductor sector.",
+    "source": "CNBC",
+    "url": "https://news.example.com/tech_ai/32_1_92616",
+    "published_at": "2026-02-20T12:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Nasdaq 100 Surges 6.3% as Earnings Beat Estimates",
+    "description": "Technology stocks led markets higher after a wave of better-than-expected quarterly earnings reports, pushing the Nasdaq 100 up 3.0%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/equities/7_4_86269",
+    "published_at": "2026-02-07T23:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "US GDP Growth Revised Up to 4.8% in Q4 Final Reading",
+    "description": "The Commerce Department's final estimate put Q4 GDP growth at an annualised 4.7%, above the preliminary figure, driven by consumer spending and business investment.",
+    "source": "Reuters",
+    "url": "https://news.example.com/macro/19_1_97994",
+    "published_at": "2026-02-09T08:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Fed Signals Pause in Rate Hikes as Inflation Eases to 4.4%",
+    "description": "Federal Reserve officials indicated they may hold interest rates steady at 5.5% after inflation data showed a cooling trend, giving markets relief.",
+    "source": "Reuters",
+    "url": "https://news.example.com/fed_rates/0_1_73699",
+    "published_at": "2026-02-26T10:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "US GDP Growth Revised Up to 5.5% in Q1 Final Reading",
+    "description": "The Commerce Department's final estimate put Q2 GDP growth at an annualised 4.9%, above the preliminary figure, driven by consumer spending and business investment.",
+    "source": "Reuters",
+    "url": "https://news.example.com/macro/19_5_90264",
+    "published_at": "2026-02-22T00:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Wall Street Banks Cut Equity Forecasts Amid Uncertainty",
+    "description": "Major banks including Goldman Sachs and Morgan Stanley lowered their year-end S&P 500 targets citing macro headwinds and elevated valuations.",
+    "source": "FT",
+    "url": "https://news.example.com/equities/8_1_90318",
+    "published_at": "2026-02-26T10:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Ethereum Upgrade Reduces Gas Fees by 2.9%, Boosts DeFi Activity",
+    "description": "The latest Ethereum network upgrade cut average transaction costs by 5.7%, spurring a wave of activity on decentralised finance platforms.",
+    "source": "The Block",
+    "url": "https://news.example.com/crypto/15_1_59034",
+    "published_at": "2026-02-27T21:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Ethereum Upgrade Reduces Gas Fees by 3.2%, Boosts DeFi Activity",
+    "description": "The latest Ethereum network upgrade cut average transaction costs by 6.1%, spurring a wave of activity on decentralised finance platforms.",
+    "source": "The Block",
+    "url": "https://news.example.com/crypto/15_4_67373",
+    "published_at": "2026-02-15T08:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "US Manufacturing PMI Contracts for 3th Consecutive Month",
+    "description": "The ISM Manufacturing PMI fell to 44.3, below the 50-point threshold for the 9th month running, indicating contraction in the sector.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/macro/22_1_25198",
+    "published_at": "2026-02-16T21:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "US GDP Growth Revised Up to 6.6% in Q3 Final Reading",
+    "description": "The Commerce Department's final estimate put Q4 GDP growth at an annualised 2.6%, above the preliminary figure, driven by consumer spending and business investment.",
+    "source": "Reuters",
+    "url": "https://news.example.com/macro/19_7_76296",
+    "published_at": "2026-02-06T12:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Citigroup Announces $77B Acquisition of CloudOps",
+    "description": "Goldman Sachs agreed to acquire CloudOps for $48 billion in a cash-and-stock deal that will create one of the largest financial services groups in North America.",
+    "source": "Reuters",
+    "url": "https://news.example.com/banking/30_8_27527",
+    "published_at": "2026-02-09T17:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Ethereum Upgrade Reduces Gas Fees by 3.8%, Boosts DeFi Activity",
+    "description": "The latest Ethereum network upgrade cut average transaction costs by 3.1%, spurring a wave of activity on decentralised finance platforms.",
+    "source": "The Block",
+    "url": "https://news.example.com/crypto/15_3_99762",
+    "published_at": "2026-02-28T04:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "US Treasury Yields Rise After Strong Jobs Report",
+    "description": "10-year Treasury yields climbed to 4.62% as a robust payrolls report of 157K new jobs reduced expectations for near-term Fed rate cuts.",
+    "source": "FT",
+    "url": "https://news.example.com/fed_rates/3_8_12979",
+    "published_at": "2026-02-16T17:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Nasdaq 100 Surges 6.5% as Earnings Beat Estimates",
+    "description": "Technology stocks led markets higher after a wave of better-than-expected quarterly earnings reports, pushing the Nasdaq 100 up 5.1%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/equities/7_5_25509",
+    "published_at": "2026-02-19T12:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Regional Banks Face Deposit Outflow Pressure",
+    "description": "Several mid-sized US lenders reported accelerating deposit outflows as customers chased higher yields in money market funds, pressuring net interest margins.",
+    "source": "WSJ",
+    "url": "https://news.example.com/banking/29_3_42032",
+    "published_at": "2026-02-24T04:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Nvidia Q4 Profit Surges 4.3% on Cost Cuts and Pricing",
+    "description": "Goldman Sachs said net income climbed 7.6% year-over-year as the company benefited from restructuring efforts and improved pricing power across its product lines.",
+    "source": "WSJ",
+    "url": "https://news.example.com/earnings/13_2_90338",
+    "published_at": "2026-02-24T15:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Volatility Index Spikes as Markets React to Geopolitical Risk",
+    "description": "The VIX fear gauge surged above 23 as investors moved to defensive positions following escalating international tensions affecting global trade.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/equities/9_3_48165",
+    "published_at": "2026-02-14T13:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Wall Street Banks Cut Equity Forecasts Amid Uncertainty",
+    "description": "Major banks including Goldman Sachs and Morgan Stanley lowered their year-end S&P 500 targets citing macro headwinds and elevated valuations.",
+    "source": "FT",
+    "url": "https://news.example.com/equities/8_4_14159",
+    "published_at": "2026-02-14T08:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "US Shale Output Rises to 13.1M Barrels Per Day",
+    "description": "American oil production reached 13.1 million barrels per day, a record high, as drillers in the Permian Basin boosted activity in response to elevated prices.",
+    "source": "WSJ",
+    "url": "https://news.example.com/energy/27_5_28329",
+    "published_at": "2026-02-25T11:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "SEC Approves Additional Spot Bitcoin ETF Applications",
+    "description": "The Securities and Exchange Commission granted approval to 4 more spot Bitcoin ETF issuers, expanding investor access to regulated crypto products.",
+    "source": "Reuters",
+    "url": "https://news.example.com/crypto/16_0_36337",
+    "published_at": "2026-02-25T23:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "US Shale Output Rises to 13.3M Barrels Per Day",
+    "description": "American oil production reached 12.8 million barrels per day, a record high, as drillers in the Permian Basin boosted activity in response to elevated prices.",
+    "source": "WSJ",
+    "url": "https://news.example.com/energy/27_3_45932",
+    "published_at": "2026-02-10T13:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "AI Infrastructure Spending to Reach $417B by 2026",
+    "description": "A new industry report projects global spending on AI data centres and infrastructure will hit $483 billion by 2030, driven by hyperscaler capital expenditure programmes.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/tech_ai/33_5_71894",
+    "published_at": "2026-02-06T16:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Morgan Stanley Reports Record Quarterly Profit of $17.2B",
+    "description": "Bank of America posted a record quarterly profit of $10.2 billion, boosted by higher net interest income, strong trading revenues, and lower-than-expected loan losses.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/banking/28_2_91309",
+    "published_at": "2026-02-03T08:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Dow Jones Drops 628 Points on Recession Fears",
+    "description": "US equities sold off sharply as weak manufacturing data stoked fears of an economic slowdown, with the Dow shedding 470 points in heavy trading.",
+    "source": "Reuters",
+    "url": "https://news.example.com/equities/6_4_72684",
+    "published_at": "2026-02-21T00:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Goldman Sachs Reports Record Quarterly Profit of $8.0B",
+    "description": "JPMorgan Chase posted a record quarterly profit of $15.3 billion, boosted by higher net interest income, strong trading revenues, and lower-than-expected loan losses.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/banking/28_1_16260",
+    "published_at": "2026-02-09T13:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Volatility Index Spikes as Markets React to Geopolitical Risk",
+    "description": "The VIX fear gauge surged above 34 as investors moved to defensive positions following escalating international tensions affecting global trade.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/equities/9_6_32939",
+    "published_at": "2026-02-01T03:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Regional Banks Face Deposit Outflow Pressure",
+    "description": "Several mid-sized US lenders reported accelerating deposit outflows as customers chased higher yields in money market funds, pressuring net interest margins.",
+    "source": "WSJ",
+    "url": "https://news.example.com/banking/29_0_94621",
+    "published_at": "2026-02-26T22:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Bank of America Reports Record Quarterly Profit of $17.6B",
+    "description": "Barclays posted a record quarterly profit of $7.4 billion, boosted by higher net interest income, strong trading revenues, and lower-than-expected loan losses.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/banking/28_3_79594",
+    "published_at": "2026-02-26T02:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Amazon Announces $37B Share Buyback Program",
+    "description": "Nvidia unveiled a $42 billion share repurchase program, signaling confidence in its long-term growth trajectory and returning capital to shareholders.",
+    "source": "Reuters",
+    "url": "https://news.example.com/earnings/12_0_44429",
+    "published_at": "2026-02-15T11:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Powell Warns of Higher-for-Longer Rate Environment",
+    "description": "Fed Chair Jerome Powell cautioned that interest rates may need to remain elevated until core inflation sustainably returns to the 2% target.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/fed_rates/1_4_47777",
+    "published_at": "2026-02-21T06:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Ethereum Upgrade Reduces Gas Fees by 6.8%, Boosts DeFi Activity",
+    "description": "The latest Ethereum network upgrade cut average transaction costs by 2.3%, spurring a wave of activity on decentralised finance platforms.",
+    "source": "The Block",
+    "url": "https://news.example.com/crypto/15_5_38647",
+    "published_at": "2026-02-05T15:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Dow Jones Drops 204 Points on Recession Fears",
+    "description": "US equities sold off sharply as weak manufacturing data stoked fears of an economic slowdown, with the Dow shedding 392 points in heavy trading.",
+    "source": "Reuters",
+    "url": "https://news.example.com/equities/6_3_99881",
+    "published_at": "2026-02-05T19:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "SPAC Activity Picks Up as 8 Blank-Check Deals Announced",
+    "description": "Special purpose acquisition company activity rebounded with 9 new SPAC formations announced this month, the highest monthly count since the 2021 peak.",
+    "source": "Reuters",
+    "url": "https://news.example.com/ipo_ma/39_5_38378",
+    "published_at": "2026-02-28T10:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "US Treasury Yields Rise After Strong Jobs Report",
+    "description": "10-year Treasury yields climbed to 4.8% as a robust payrolls report of 129K new jobs reduced expectations for near-term Fed rate cuts.",
+    "source": "FT",
+    "url": "https://news.example.com/fed_rates/3_0_76535",
+    "published_at": "2026-02-28T11:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Nasdaq 100 Surges 5.0% as Earnings Beat Estimates",
+    "description": "Technology stocks led markets higher after a wave of better-than-expected quarterly earnings reports, pushing the Nasdaq 100 up 5.9%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/equities/7_3_49936",
+    "published_at": "2026-02-07T10:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "PE Firm Blackstone Raises $78B Buyout Fund, Largest Ever",
+    "description": "Private equity giant Carlyle closed its latest flagship buyout fund at $21 billion, surpassing its target and making it the largest PE fund ever raised.",
+    "source": "FT",
+    "url": "https://news.example.com/ipo_ma/38_7_88280",
+    "published_at": "2026-02-13T18:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "AI Infrastructure Spending to Reach $331B by 2027",
+    "description": "A new industry report projects global spending on AI data centres and infrastructure will hit $598 billion by 2028, driven by hyperscaler capital expenditure programmes.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/tech_ai/33_2_67135",
+    "published_at": "2026-02-19T06:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Ethereum Upgrade Reduces Gas Fees by 6.5%, Boosts DeFi Activity",
+    "description": "The latest Ethereum network upgrade cut average transaction costs by 2.4%, spurring a wave of activity on decentralised finance platforms.",
+    "source": "The Block",
+    "url": "https://news.example.com/crypto/15_6_10792",
+    "published_at": "2026-02-14T09:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Fed Minutes Reveal Split on Timing of First Rate Cut",
+    "description": "Minutes from the latest FOMC meeting show policymakers divided on when to begin cutting the federal funds rate, currently at 5.25%.",
+    "source": "WSJ",
+    "url": "https://news.example.com/fed_rates/2_5_96057",
+    "published_at": "2026-02-27T04:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Powell Warns of Higher-for-Longer Rate Environment",
+    "description": "Fed Chair Jerome Powell cautioned that interest rates may need to remain elevated until core inflation sustainably returns to the 2% target.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/fed_rates/1_0_37110",
+    "published_at": "2026-02-17T15:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Nvidia Launches Enterprise AI Platform, Signs 4 Fortune 500 Clients",
+    "description": "Alphabet's new AI-powered enterprise platform secured 5 Fortune 500 customers in its first month, generating $88.9M in annual recurring revenue commitments.",
+    "source": "TechCrunch",
+    "url": "https://news.example.com/tech_ai/34_3_22576",
+    "published_at": "2026-02-16T05:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Barclays Reports Record Quarterly Profit of $11.9B",
+    "description": "HSBC posted a record quarterly profit of $12.9 billion, boosted by higher net interest income, strong trading revenues, and lower-than-expected loan losses.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/banking/28_5_66792",
+    "published_at": "2026-02-16T17:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Fed Minutes Reveal Split on Timing of First Rate Cut",
+    "description": "Minutes from the latest FOMC meeting show policymakers divided on when to begin cutting the federal funds rate, currently at 4.25%.",
+    "source": "WSJ",
+    "url": "https://news.example.com/fed_rates/2_2_50963",
+    "published_at": "2026-02-27T17:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "AI Infrastructure Spending to Reach $227B by 2030",
+    "description": "A new industry report projects global spending on AI data centres and infrastructure will hit $540 billion by 2028, driven by hyperscaler capital expenditure programmes.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/tech_ai/33_4_71604",
+    "published_at": "2026-02-13T00:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Crypto Market Cap Reaches $3.0T as Altcoins Rally",
+    "description": "Total crypto market capitalisation touched $2.2 trillion as Solana, Avalanche, and other layer-1 tokens posted double-digit percentage gains.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/crypto/17_1_27079",
+    "published_at": "2026-02-14T15:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Gold Hits Record $2273 as Dollar Weakens",
+    "description": "Gold futures surged to a record $2589 per troy ounce as the US dollar index fell 5.7% on softer economic data and rising safe-haven demand.",
+    "source": "FT",
+    "url": "https://news.example.com/energy/26_5_50607",
+    "published_at": "2026-02-23T00:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Bitcoin Surges Past $84K on ETF Inflow Optimism",
+    "description": "Bitcoin climbed to $67,000 as spot ETF products attracted over $3.8B in net inflows this week, driving institutional buying momentum.",
+    "source": "CoinDesk",
+    "url": "https://news.example.com/crypto/14_1_99417",
+    "published_at": "2026-02-02T02:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Meta Agrees to Buy DataBridge for $63B in All-Cash Deal",
+    "description": "Salesforce announced a definitive agreement to acquire AutomateIQ for $83 billion in cash, a 29% premium to the 30-day volume-weighted average price.",
+    "source": "WSJ",
+    "url": "https://news.example.com/ipo_ma/37_2_52072",
+    "published_at": "2026-02-27T11:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "US Shale Output Rises to 13.2M Barrels Per Day",
+    "description": "American oil production reached 13.3 million barrels per day, a record high, as drillers in the Permian Basin boosted activity in response to elevated prices.",
+    "source": "WSJ",
+    "url": "https://news.example.com/energy/27_7_41784",
+    "published_at": "2026-02-03T19:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Bank of America Announces $36B Acquisition of CloudOps",
+    "description": "JPMorgan Chase agreed to acquire DataBridge for $12 billion in a cash-and-stock deal that will create one of the largest financial services groups in North America.",
+    "source": "Reuters",
+    "url": "https://news.example.com/banking/30_1_86344",
+    "published_at": "2026-02-18T21:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "US Treasury Yields Rise After Strong Jobs Report",
+    "description": "10-year Treasury yields climbed to 3.83% as a robust payrolls report of 321K new jobs reduced expectations for near-term Fed rate cuts.",
+    "source": "FT",
+    "url": "https://news.example.com/fed_rates/3_4_99181",
+    "published_at": "2026-02-23T01:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Fed Signals Pause in Rate Hikes as Inflation Eases to 4.9%",
+    "description": "Federal Reserve officials indicated they may hold interest rates steady at 5.25% after inflation data showed a cooling trend, giving markets relief.",
+    "source": "Reuters",
+    "url": "https://news.example.com/fed_rates/0_3_95717",
+    "published_at": "2026-02-06T13:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "US GDP Growth Revised Up to 3.6% in Q2 Final Reading",
+    "description": "The Commerce Department's final estimate put Q3 GDP growth at an annualised 6.8%, above the preliminary figure, driven by consumer spending and business investment.",
+    "source": "Reuters",
+    "url": "https://news.example.com/macro/19_3_44964",
+    "published_at": "2026-02-26T12:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "US GDP Growth Revised Up to 2.4% in Q4 Final Reading",
+    "description": "The Commerce Department's final estimate put Q4 GDP growth at an annualised 4.3%, above the preliminary figure, driven by consumer spending and business investment.",
+    "source": "Reuters",
+    "url": "https://news.example.com/macro/19_8_96364",
+    "published_at": "2026-02-15T12:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Semiconductor Stocks Rally on Strong AI Demand Data",
+    "description": "Shares of chip designers and equipment makers surged after industry data showed AI-related chip orders up 3.1% quarter-over-quarter, far exceeding analyst expectations.",
+    "source": "Reuters",
+    "url": "https://news.example.com/tech_ai/35_0_39132",
+    "published_at": "2026-02-19T22:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Gold Hits Record $2335 as Dollar Weakens",
+    "description": "Gold futures surged to a record $2243 per troy ounce as the US dollar index fell 2.5% on softer economic data and rising safe-haven demand.",
+    "source": "FT",
+    "url": "https://news.example.com/energy/26_1_15259",
+    "published_at": "2026-02-11T00:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Dow Jones Drops 592 Points on Recession Fears",
+    "description": "US equities sold off sharply as weak manufacturing data stoked fears of an economic slowdown, with the Dow shedding 652 points in heavy trading.",
+    "source": "Reuters",
+    "url": "https://news.example.com/equities/6_0_26236",
+    "published_at": "2026-02-19T03:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Powell Warns of Higher-for-Longer Rate Environment",
+    "description": "Fed Chair Jerome Powell cautioned that interest rates may need to remain elevated until core inflation sustainably returns to the 2% target.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/fed_rates/1_1_50888",
+    "published_at": "2026-02-27T13:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Dow Jones Drops 800 Points on Recession Fears",
+    "description": "US equities sold off sharply as weak manufacturing data stoked fears of an economic slowdown, with the Dow shedding 670 points in heavy trading.",
+    "source": "Reuters",
+    "url": "https://news.example.com/equities/6_1_88647",
+    "published_at": "2026-02-22T00:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "S&P 500 Hits Record High Driven by Tech Rally",
+    "description": "The S&P 500 closed at a new all-time high of 5046, propelled by strong gains in mega-cap technology stocks amid optimism over AI spending.",
+    "source": "CNBC",
+    "url": "https://news.example.com/equities/5_8_23133",
+    "published_at": "2026-02-28T03:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Semiconductor Stocks Rally on Strong AI Demand Data",
+    "description": "Shares of chip designers and equipment makers surged after industry data showed AI-related chip orders up 5.3% quarter-over-quarter, far exceeding analyst expectations.",
+    "source": "Reuters",
+    "url": "https://news.example.com/tech_ai/35_3_71637",
+    "published_at": "2026-02-13T21:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Unemployment Rate Falls to 5.3%, Wages Rise 5.6%",
+    "description": "The US economy added 254K jobs last month while the unemployment rate dipped to 6.4%, the lowest in 3 years, with average hourly earnings rising 3.3%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/macro/20_3_45949",
+    "published_at": "2026-02-10T23:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Nasdaq 100 Surges 5.5% as Earnings Beat Estimates",
+    "description": "Technology stocks led markets higher after a wave of better-than-expected quarterly earnings reports, pushing the Nasdaq 100 up 6.6%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/equities/7_1_87120",
+    "published_at": "2026-02-05T13:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Fed Signals Pause in Rate Hikes as Inflation Eases to 7.7%",
+    "description": "Federal Reserve officials indicated they may hold interest rates steady at 5.25% after inflation data showed a cooling trend, giving markets relief.",
+    "source": "Reuters",
+    "url": "https://news.example.com/fed_rates/0_2_40982",
+    "published_at": "2026-02-27T02:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Unemployment Rate Falls to 6.5%, Wages Rise 3.3%",
+    "description": "The US economy added 269K jobs last month while the unemployment rate dipped to 4.1%, the lowest in 2 years, with average hourly earnings rising 5.7%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/macro/20_2_40216",
+    "published_at": "2026-02-02T00:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Basel III Capital Rules to Raise Bank Equity Requirements",
+    "description": "US regulators finalised updated Basel III endgame capital rules requiring the largest banks to hold significantly more equity, with the changes phased in over 4 years.",
+    "source": "FT",
+    "url": "https://news.example.com/banking/31_4_25533",
+    "published_at": "2026-02-12T12:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "AI Infrastructure Spending to Reach $598B by 2028",
+    "description": "A new industry report projects global spending on AI data centres and infrastructure will hit $406 billion by 2027, driven by hyperscaler capital expenditure programmes.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/tech_ai/33_7_87317",
+    "published_at": "2026-02-25T10:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "S&P 500 Hits Record High Driven by Tech Rally",
+    "description": "The S&P 500 closed at a new all-time high of 4863, propelled by strong gains in mega-cap technology stocks amid optimism over AI spending.",
+    "source": "CNBC",
+    "url": "https://news.example.com/equities/5_7_72071",
+    "published_at": "2026-02-24T10:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Barclays Announces $11B Acquisition of MediaTech",
+    "description": "Goldman Sachs agreed to acquire FinTech Pro for $45 billion in a cash-and-stock deal that will create one of the largest financial services groups in North America.",
+    "source": "Reuters",
+    "url": "https://news.example.com/banking/30_4_14692",
+    "published_at": "2026-02-17T04:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Powell Warns of Higher-for-Longer Rate Environment",
+    "description": "Fed Chair Jerome Powell cautioned that interest rates may need to remain elevated until core inflation sustainably returns to the 2% target.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/fed_rates/1_2_86225",
+    "published_at": "2026-02-19T21:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Nasdaq 100 Surges 4.1% as Earnings Beat Estimates",
+    "description": "Technology stocks led markets higher after a wave of better-than-expected quarterly earnings reports, pushing the Nasdaq 100 up 5.2%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/equities/7_7_62513",
+    "published_at": "2026-02-26T12:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Regional Banks Face Deposit Outflow Pressure",
+    "description": "Several mid-sized US lenders reported accelerating deposit outflows as customers chased higher yields in money market funds, pressuring net interest margins.",
+    "source": "WSJ",
+    "url": "https://news.example.com/banking/29_5_65146",
+    "published_at": "2026-02-07T01:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Unemployment Rate Falls to 5.7%, Wages Rise 4.9%",
+    "description": "The US economy added 291K jobs last month while the unemployment rate dipped to 2.3%, the lowest in 2 years, with average hourly earnings rising 5.7%.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/macro/20_1_12810",
+    "published_at": "2026-02-15T13:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Bitcoin Surges Past $64K on ETF Inflow Optimism",
+    "description": "Bitcoin climbed to $96,000 as spot ETF products attracted over $1.4B in net inflows this week, driving institutional buying momentum.",
+    "source": "CoinDesk",
+    "url": "https://news.example.com/crypto/14_3_87283",
+    "published_at": "2026-02-24T00:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "US GDP Growth Revised Up to 5.9% in Q2 Final Reading",
+    "description": "The Commerce Department's final estimate put Q3 GDP growth at an annualised 5.1%, above the preliminary figure, driven by consumer spending and business investment.",
+    "source": "Reuters",
+    "url": "https://news.example.com/macro/19_4_32377",
+    "published_at": "2026-02-01T15:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "SPAC Activity Picks Up as 5 Blank-Check Deals Announced",
+    "description": "Special purpose acquisition company activity rebounded with 3 new SPAC formations announced this month, the highest monthly count since the 2021 peak.",
+    "source": "Reuters",
+    "url": "https://news.example.com/ipo_ma/39_4_90539",
+    "published_at": "2026-02-13T18:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Volatility Index Spikes as Markets React to Geopolitical Risk",
+    "description": "The VIX fear gauge surged above 34 as investors moved to defensive positions following escalating international tensions affecting global trade.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/equities/9_0_27677",
+    "published_at": "2026-02-04T01:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Volatility Index Spikes as Markets React to Geopolitical Risk",
+    "description": "The VIX fear gauge surged above 22 as investors moved to defensive positions following escalating international tensions affecting global trade.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/equities/9_5_35369",
+    "published_at": "2026-02-22T15:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "PE Firm Carlyle Raises $20B Buyout Fund, Largest Ever",
+    "description": "Private equity giant Vista Equity closed its latest flagship buyout fund at $52 billion, surpassing its target and making it the largest PE fund ever raised.",
+    "source": "FT",
+    "url": "https://news.example.com/ipo_ma/38_1_45466",
+    "published_at": "2026-02-03T11:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Tesla Q3 Profit Surges 6.2% on Cost Cuts and Pricing",
+    "description": "Apple said net income climbed 3.2% year-over-year as the company benefited from restructuring efforts and improved pricing power across its product lines.",
+    "source": "WSJ",
+    "url": "https://news.example.com/earnings/13_1_47743",
+    "published_at": "2026-02-27T10:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "US GDP Growth Revised Up to 7.2% in Q1 Final Reading",
+    "description": "The Commerce Department's final estimate put Q4 GDP growth at an annualised 3.7%, above the preliminary figure, driven by consumer spending and business investment.",
+    "source": "Reuters",
+    "url": "https://news.example.com/macro/19_2_90314",
+    "published_at": "2026-02-03T18:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "HSBC Announces $81B Acquisition of CloudOps",
+    "description": "Wells Fargo agreed to acquire DataBridge for $34 billion in a cash-and-stock deal that will create one of the largest financial services groups in North America.",
+    "source": "Reuters",
+    "url": "https://news.example.com/banking/30_5_93092",
+    "published_at": "2026-02-23T20:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "IMF Cuts Global Growth Forecast to 4.9% Amid Trade Tensions",
+    "description": "The International Monetary Fund lowered its world growth projection to 3.9% for the year, citing tightening financial conditions and persistent geopolitical uncertainty.",
+    "source": "FT",
+    "url": "https://news.example.com/macro/21_3_86980",
+    "published_at": "2026-02-21T16:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "S&P 500 Hits Record High Driven by Tech Rally",
+    "description": "The S&P 500 closed at a new all-time high of 5108, propelled by strong gains in mega-cap technology stocks amid optimism over AI spending.",
+    "source": "CNBC",
+    "url": "https://news.example.com/equities/5_3_61688",
+    "published_at": "2026-02-18T22:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Meta Files for IPO, Seeking $86B Valuation",
+    "description": "AMD submitted its S-1 registration statement targeting a $112 billion valuation in what would be the year's largest technology IPO, with bookrunners set.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/ipo_ma/36_0_23315",
+    "published_at": "2026-02-05T16:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "US Shale Output Rises to 13.0M Barrels Per Day",
+    "description": "American oil production reached 12.5 million barrels per day, a record high, as drillers in the Permian Basin boosted activity in response to elevated prices.",
+    "source": "WSJ",
+    "url": "https://news.example.com/energy/27_2_46329",
+    "published_at": "2026-02-07T21:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Goldman Sachs Files for IPO, Seeking $93B Valuation",
+    "description": "Oracle submitted its S-1 registration statement targeting a $92 billion valuation in what would be the year's largest technology IPO, with bookrunners set.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/ipo_ma/36_3_80226",
+    "published_at": "2026-02-14T02:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "SPAC Activity Picks Up as 9 Blank-Check Deals Announced",
+    "description": "Special purpose acquisition company activity rebounded with 2 new SPAC formations announced this month, the highest monthly count since the 2021 peak.",
+    "source": "Reuters",
+    "url": "https://news.example.com/ipo_ma/39_3_25930",
+    "published_at": "2026-02-15T16:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Bitcoin Surges Past $80K on ETF Inflow Optimism",
+    "description": "Bitcoin climbed to $81,000 as spot ETF products attracted over $2.6B in net inflows this week, driving institutional buying momentum.",
+    "source": "CoinDesk",
+    "url": "https://news.example.com/crypto/14_8_77256",
+    "published_at": "2026-02-27T08:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "AI Infrastructure Spending to Reach $451B by 2026",
+    "description": "A new industry report projects global spending on AI data centres and infrastructure will hit $366 billion by 2029, driven by hyperscaler capital expenditure programmes.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/tech_ai/33_6_53687",
+    "published_at": "2026-02-25T03:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Qualcomm Unveils Next-Gen AI Chip, Shares Jump 2.8%",
+    "description": "Qualcomm announced its latest AI accelerator chip delivering 2x the performance of the previous generation, sending shares up 7.7% and lifting the broader semiconductor sector.",
+    "source": "CNBC",
+    "url": "https://news.example.com/tech_ai/32_3_87872",
+    "published_at": "2026-02-25T16:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Tesla Launches Enterprise AI Platform, Signs 2 Fortune 500 Clients",
+    "description": "Tesla's new AI-powered enterprise platform secured 5 Fortune 500 customers in its first month, generating $119.7M in annual recurring revenue commitments.",
+    "source": "TechCrunch",
+    "url": "https://news.example.com/tech_ai/34_6_25988",
+    "published_at": "2026-02-12T07:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "IMF Cuts Global Growth Forecast to 5.5% Amid Trade Tensions",
+    "description": "The International Monetary Fund lowered its world growth projection to 5.7% for the year, citing tightening financial conditions and persistent geopolitical uncertainty.",
+    "source": "FT",
+    "url": "https://news.example.com/macro/21_1_46511",
+    "published_at": "2026-02-11T04:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Ethereum Upgrade Reduces Gas Fees by 7.1%, Boosts DeFi Activity",
+    "description": "The latest Ethereum network upgrade cut average transaction costs by 3.4%, spurring a wave of activity on decentralised finance platforms.",
+    "source": "The Block",
+    "url": "https://news.example.com/crypto/15_0_12751",
+    "published_at": "2026-02-10T18:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Crypto Market Cap Reaches $2.5T as Altcoins Rally",
+    "description": "Total crypto market capitalisation touched $3.2 trillion as Solana, Avalanche, and other layer-1 tokens posted double-digit percentage gains.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/crypto/17_0_11052",
+    "published_at": "2026-02-15T19:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Goldman Sachs Announces $30B Acquisition of FinTech Pro",
+    "description": "Bank of America agreed to acquire FinTech Pro for $63 billion in a cash-and-stock deal that will create one of the largest financial services groups in North America.",
+    "source": "Reuters",
+    "url": "https://news.example.com/banking/30_6_50315",
+    "published_at": "2026-02-05T21:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "US Manufacturing PMI Contracts for 9th Consecutive Month",
+    "description": "The ISM Manufacturing PMI fell to 47.2, below the 50-point threshold for the 9th month running, indicating contraction in the sector.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/macro/22_5_74431",
+    "published_at": "2026-02-13T17:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Meta Q4 Profit Surges 6.8% on Cost Cuts and Pricing",
+    "description": "Tesla said net income climbed 6.9% year-over-year as the company benefited from restructuring efforts and improved pricing power across its product lines.",
+    "source": "WSJ",
+    "url": "https://news.example.com/earnings/13_0_64127",
+    "published_at": "2026-02-17T21:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Barclays Reports Record Quarterly Profit of $7.0B",
+    "description": "Goldman Sachs posted a record quarterly profit of $12.4 billion, boosted by higher net interest income, strong trading revenues, and lower-than-expected loan losses.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/banking/28_6_65685",
+    "published_at": "2026-02-15T05:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "SEC Approves Additional Spot Bitcoin ETF Applications",
+    "description": "The Securities and Exchange Commission granted approval to 6 more spot Bitcoin ETF issuers, expanding investor access to regulated crypto products.",
+    "source": "Reuters",
+    "url": "https://news.example.com/crypto/16_1_62450",
+    "published_at": "2026-02-02T23:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Goldman Sachs Reports Record Quarterly Profit of $6.5B",
+    "description": "HSBC posted a record quarterly profit of $15.3 billion, boosted by higher net interest income, strong trading revenues, and lower-than-expected loan losses.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/banking/28_7_82913",
+    "published_at": "2026-02-09T22:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Fed Minutes Reveal Split on Timing of First Rate Cut",
+    "description": "Minutes from the latest FOMC meeting show policymakers divided on when to begin cutting the federal funds rate, currently at 5.25%.",
+    "source": "WSJ",
+    "url": "https://news.example.com/fed_rates/2_6_16839",
+    "published_at": "2026-02-20T04:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Gold Hits Record $2755 as Dollar Weakens",
+    "description": "Gold futures surged to a record $2700 per troy ounce as the US dollar index fell 5.5% on softer economic data and rising safe-haven demand.",
+    "source": "FT",
+    "url": "https://news.example.com/energy/26_4_34684",
+    "published_at": "2026-02-10T11:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "US Treasury Yields Rise After Strong Jobs Report",
+    "description": "10-year Treasury yields climbed to 4.37% as a robust payrolls report of 164K new jobs reduced expectations for near-term Fed rate cuts.",
+    "source": "FT",
+    "url": "https://news.example.com/fed_rates/3_7_81989",
+    "published_at": "2026-02-14T05:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "US Treasury Yields Rise After Strong Jobs Report",
+    "description": "10-year Treasury yields climbed to 4.57% as a robust payrolls report of 190K new jobs reduced expectations for near-term Fed rate cuts.",
+    "source": "FT",
+    "url": "https://news.example.com/fed_rates/3_6_32946",
+    "published_at": "2026-02-25T23:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "JPMorgan Files for IPO, Seeking $46B Valuation",
+    "description": "Qualcomm submitted its S-1 registration statement targeting a $71 billion valuation in what would be the year's largest technology IPO, with bookrunners set.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/ipo_ma/36_2_12298",
+    "published_at": "2026-02-16T03:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "S&P 500 Hits Record High Driven by Tech Rally",
+    "description": "The S&P 500 closed at a new all-time high of 5214, propelled by strong gains in mega-cap technology stocks amid optimism over AI spending.",
+    "source": "CNBC",
+    "url": "https://news.example.com/equities/5_0_21708",
+    "published_at": "2026-02-13T14:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "PE Firm Blackstone Raises $71B Buyout Fund, Largest Ever",
+    "description": "Private equity giant KKR closed its latest flagship buyout fund at $46 billion, surpassing its target and making it the largest PE fund ever raised.",
+    "source": "FT",
+    "url": "https://news.example.com/ipo_ma/38_4_49522",
+    "published_at": "2026-02-07T01:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Broadcom Unveils Next-Gen AI Chip, Shares Jump 5.4%",
+    "description": "AMD announced its latest AI accelerator chip delivering 2x the performance of the previous generation, sending shares up 6.6% and lifting the broader semiconductor sector.",
+    "source": "CNBC",
+    "url": "https://news.example.com/tech_ai/32_4_96067",
+    "published_at": "2026-02-21T20:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Microsoft Announces $33B Share Buyback Program",
+    "description": "Microsoft unveiled a $18 billion share repurchase program, signaling confidence in its long-term growth trajectory and returning capital to shareholders.",
+    "source": "Reuters",
+    "url": "https://news.example.com/earnings/12_2_80402",
+    "published_at": "2026-02-20T22:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Salesforce Announces $19B Share Buyback Program",
+    "description": "Salesforce unveiled a $30 billion share repurchase program, signaling confidence in its long-term growth trajectory and returning capital to shareholders.",
+    "source": "Reuters",
+    "url": "https://news.example.com/earnings/12_3_97382",
+    "published_at": "2026-02-01T23:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Inflation Data Shows CPI Rose 7.6% Year-Over-Year",
+    "description": "The Consumer Price Index rose 5.2% in the latest reading, slightly above analyst forecasts, keeping pressure on the Federal Reserve to maintain its restrictive stance.",
+    "source": "CNBC",
+    "url": "https://news.example.com/fed_rates/4_1_74303",
+    "published_at": "2026-02-18T13:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Semiconductor Stocks Rally on Strong AI Demand Data",
+    "description": "Shares of chip designers and equipment makers surged after industry data showed AI-related chip orders up 6.2% quarter-over-quarter, far exceeding analyst expectations.",
+    "source": "Reuters",
+    "url": "https://news.example.com/tech_ai/35_6_36079",
+    "published_at": "2026-02-13T12:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Bitcoin Surges Past $95K on ETF Inflow Optimism",
+    "description": "Bitcoin climbed to $67,000 as spot ETF products attracted over $3.6B in net inflows this week, driving institutional buying momentum.",
+    "source": "CoinDesk",
+    "url": "https://news.example.com/crypto/14_5_73201",
+    "published_at": "2026-02-14T00:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Basel III Capital Rules to Raise Bank Equity Requirements",
+    "description": "US regulators finalised updated Basel III endgame capital rules requiring the largest banks to hold significantly more equity, with the changes phased in over 2 years.",
+    "source": "FT",
+    "url": "https://news.example.com/banking/31_3_80731",
+    "published_at": "2026-02-03T03:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Wall Street Banks Cut Equity Forecasts Amid Uncertainty",
+    "description": "Major banks including Goldman Sachs and Morgan Stanley lowered their year-end S&P 500 targets citing macro headwinds and elevated valuations.",
+    "source": "FT",
+    "url": "https://news.example.com/equities/8_6_20480",
+    "published_at": "2026-02-26T14:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Morgan Stanley Reports Record Quarterly Profit of $6.6B",
+    "description": "HSBC posted a record quarterly profit of $10.0 billion, boosted by higher net interest income, strong trading revenues, and lower-than-expected loan losses.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/banking/28_0_31519",
+    "published_at": "2026-02-20T08:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Bitcoin Surges Past $83K on ETF Inflow Optimism",
+    "description": "Bitcoin climbed to $69,000 as spot ETF products attracted over $4.2B in net inflows this week, driving institutional buying momentum.",
+    "source": "CoinDesk",
+    "url": "https://news.example.com/crypto/14_7_53817",
+    "published_at": "2026-02-10T22:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "AI Infrastructure Spending to Reach $455B by 2029",
+    "description": "A new industry report projects global spending on AI data centres and infrastructure will hit $585 billion by 2026, driven by hyperscaler capital expenditure programmes.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/tech_ai/33_1_30593",
+    "published_at": "2026-02-27T13:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Tesla Announces $10B Share Buyback Program",
+    "description": "Tesla unveiled a $39 billion share repurchase program, signaling confidence in its long-term growth trajectory and returning capital to shareholders.",
+    "source": "Reuters",
+    "url": "https://news.example.com/earnings/12_5_80772",
+    "published_at": "2026-02-26T23:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Amazon Reports Q3 Earnings Beat, Raises Full-Year Guidance",
+    "description": "Nvidia posted earnings per share of $3.2, beating analyst estimates of $1.11, and raised full-year revenue guidance by 3.2% citing strong demand.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/earnings/10_0_88134",
+    "published_at": "2026-02-12T01:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Stablecoin Regulation Bill Advances in Senate",
+    "description": "A bipartisan bill setting federal standards for stablecoin issuers cleared a key Senate committee hurdle, bringing the US closer to a comprehensive crypto regulatory framework.",
+    "source": "FT",
+    "url": "https://news.example.com/crypto/18_1_54749",
+    "published_at": "2026-02-20T02:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "SEC Approves Additional Spot Bitcoin ETF Applications",
+    "description": "The Securities and Exchange Commission granted approval to 8 more spot Bitcoin ETF issuers, expanding investor access to regulated crypto products.",
+    "source": "Reuters",
+    "url": "https://news.example.com/crypto/16_6_75828",
+    "published_at": "2026-02-18T06:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Fed Minutes Reveal Split on Timing of First Rate Cut",
+    "description": "Minutes from the latest FOMC meeting show policymakers divided on when to begin cutting the federal funds rate, currently at 5.25%.",
+    "source": "WSJ",
+    "url": "https://news.example.com/fed_rates/2_1_18992",
+    "published_at": "2026-02-13T17:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "S&P 500 Hits Record High Driven by Tech Rally",
+    "description": "The S&P 500 closed at a new all-time high of 5059, propelled by strong gains in mega-cap technology stocks amid optimism over AI spending.",
+    "source": "CNBC",
+    "url": "https://news.example.com/equities/5_2_14635",
+    "published_at": "2026-02-14T22:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "HSBC Announces $62B Acquisition of AutomateIQ",
+    "description": "Barclays agreed to acquire FinTech Pro for $42 billion in a cash-and-stock deal that will create one of the largest financial services groups in North America.",
+    "source": "Reuters",
+    "url": "https://news.example.com/banking/30_2_48892",
+    "published_at": "2026-02-15T20:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Netflix Misses Quarterly Revenue Targets, Shares Fall 3.6%",
+    "description": "Oracle reported Q2 revenue of $89.2B, missing Wall Street forecasts of $75.2B. The stock fell 6.1% in after-hours trading.",
+    "source": "CNBC",
+    "url": "https://news.example.com/earnings/11_0_74080",
+    "published_at": "2026-02-22T12:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "Crypto Market Cap Reaches $3.3T as Altcoins Rally",
+    "description": "Total crypto market capitalisation touched $2.5 trillion as Solana, Avalanche, and other layer-1 tokens posted double-digit percentage gains.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/crypto/17_5_24438",
+    "published_at": "2026-02-12T02:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Oil Prices Rise 3.4% as OPEC+ Extends Production Cuts",
+    "description": "WTI crude climbed to $89.1 per barrel after OPEC+ members agreed to extend voluntary production cuts of 1.9M barrels per day through the next quarter.",
+    "source": "Reuters",
+    "url": "https://news.example.com/energy/24_2_89142",
+    "published_at": "2026-02-20T15:00:00Z",
+    "cluster_hint": "energy"
+  },
+  {
+    "title": "Consumer Confidence Index Rises to 110.3, Highest Since 2027",
+    "description": "The Conference Board's Consumer Confidence Index jumped to 100.4 this month, the highest reading since 2027, as Americans grew more optimistic about labour market conditions.",
+    "source": "CNBC",
+    "url": "https://news.example.com/macro/23_6_22424",
+    "published_at": "2026-02-23T15:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Netflix Launches Enterprise AI Platform, Signs 2 Fortune 500 Clients",
+    "description": "Broadcom's new AI-powered enterprise platform secured 6 Fortune 500 customers in its first month, generating $53.3M in annual recurring revenue commitments.",
+    "source": "TechCrunch",
+    "url": "https://news.example.com/tech_ai/34_4_25397",
+    "published_at": "2026-02-20T17:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Apple Unveils Next-Gen AI Chip, Shares Jump 6.7%",
+    "description": "JPMorgan announced its latest AI accelerator chip delivering 5x the performance of the previous generation, sending shares up 7.4% and lifting the broader semiconductor sector.",
+    "source": "CNBC",
+    "url": "https://news.example.com/tech_ai/32_0_49263",
+    "published_at": "2026-02-20T14:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "Oracle Launches Enterprise AI Platform, Signs 9 Fortune 500 Clients",
+    "description": "JPMorgan's new AI-powered enterprise platform secured 7 Fortune 500 customers in its first month, generating $32.3M in annual recurring revenue commitments.",
+    "source": "TechCrunch",
+    "url": "https://news.example.com/tech_ai/34_5_36131",
+    "published_at": "2026-02-03T09:00:00Z",
+    "cluster_hint": "tech_ai"
+  },
+  {
+    "title": "SPAC Activity Picks Up as 7 Blank-Check Deals Announced",
+    "description": "Special purpose acquisition company activity rebounded with 9 new SPAC formations announced this month, the highest monthly count since the 2021 peak.",
+    "source": "Reuters",
+    "url": "https://news.example.com/ipo_ma/39_6_28977",
+    "published_at": "2026-02-04T15:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Inflation Data Shows CPI Rose 6.2% Year-Over-Year",
+    "description": "The Consumer Price Index rose 6.5% in the latest reading, slightly above analyst forecasts, keeping pressure on the Federal Reserve to maintain its restrictive stance.",
+    "source": "CNBC",
+    "url": "https://news.example.com/fed_rates/4_0_17552",
+    "published_at": "2026-02-15T21:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "SPAC Activity Picks Up as 3 Blank-Check Deals Announced",
+    "description": "Special purpose acquisition company activity rebounded with 3 new SPAC formations announced this month, the highest monthly count since the 2021 peak.",
+    "source": "Reuters",
+    "url": "https://news.example.com/ipo_ma/39_1_79236",
+    "published_at": "2026-02-15T13:00:00Z",
+    "cluster_hint": "ipo_ma"
+  },
+  {
+    "title": "Bank of America Reports Record Quarterly Profit of $6.5B",
+    "description": "Goldman Sachs posted a record quarterly profit of $5.8 billion, boosted by higher net interest income, strong trading revenues, and lower-than-expected loan losses.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/banking/28_4_34582",
+    "published_at": "2026-02-12T02:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "US Manufacturing PMI Contracts for 4th Consecutive Month",
+    "description": "The ISM Manufacturing PMI fell to 46.3, below the 50-point threshold for the 9th month running, indicating contraction in the sector.",
+    "source": "MarketWatch",
+    "url": "https://news.example.com/macro/22_3_86668",
+    "published_at": "2026-02-24T02:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Qualcomm Q2 Profit Surges 4.3% on Cost Cuts and Pricing",
+    "description": "Broadcom said net income climbed 5.7% year-over-year as the company benefited from restructuring efforts and improved pricing power across its product lines.",
+    "source": "WSJ",
+    "url": "https://news.example.com/earnings/13_4_20717",
+    "published_at": "2026-02-18T19:00:00Z",
+    "cluster_hint": "earnings"
+  },
+  {
+    "title": "IMF Cuts Global Growth Forecast to 6.3% Amid Trade Tensions",
+    "description": "The International Monetary Fund lowered its world growth projection to 5.4% for the year, citing tightening financial conditions and persistent geopolitical uncertainty.",
+    "source": "FT",
+    "url": "https://news.example.com/macro/21_6_57039",
+    "published_at": "2026-02-03T05:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "Fed Signals Pause in Rate Hikes as Inflation Eases to 5.9%",
+    "description": "Federal Reserve officials indicated they may hold interest rates steady at 4.5% after inflation data showed a cooling trend, giving markets relief.",
+    "source": "Reuters",
+    "url": "https://news.example.com/fed_rates/0_4_24168",
+    "published_at": "2026-02-17T00:00:00Z",
+    "cluster_hint": "fed_rates"
+  },
+  {
+    "title": "Stablecoin Regulation Bill Advances in Senate",
+    "description": "A bipartisan bill setting federal standards for stablecoin issuers cleared a key Senate committee hurdle, bringing the US closer to a comprehensive crypto regulatory framework.",
+    "source": "FT",
+    "url": "https://news.example.com/crypto/18_0_83307",
+    "published_at": "2026-02-12T11:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Regional Banks Face Deposit Outflow Pressure",
+    "description": "Several mid-sized US lenders reported accelerating deposit outflows as customers chased higher yields in money market funds, pressuring net interest margins.",
+    "source": "WSJ",
+    "url": "https://news.example.com/banking/29_4_15525",
+    "published_at": "2026-02-23T12:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Basel III Capital Rules to Raise Bank Equity Requirements",
+    "description": "US regulators finalised updated Basel III endgame capital rules requiring the largest banks to hold significantly more equity, with the changes phased in over 3 years.",
+    "source": "FT",
+    "url": "https://news.example.com/banking/31_0_52854",
+    "published_at": "2026-02-27T02:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Consumer Confidence Index Rises to 103.2, Highest Since 2028",
+    "description": "The Conference Board's Consumer Confidence Index jumped to 111.3 this month, the highest reading since 2029, as Americans grew more optimistic about labour market conditions.",
+    "source": "CNBC",
+    "url": "https://news.example.com/macro/23_0_39933",
+    "published_at": "2026-02-25T08:00:00Z",
+    "cluster_hint": "macro"
+  },
+  {
+    "title": "S&P 500 Hits Record High Driven by Tech Rally",
+    "description": "The S&P 500 closed at a new all-time high of 5353, propelled by strong gains in mega-cap technology stocks amid optimism over AI spending.",
+    "source": "CNBC",
+    "url": "https://news.example.com/equities/5_5_56095",
+    "published_at": "2026-02-28T10:00:00Z",
+    "cluster_hint": "equities"
+  },
+  {
+    "title": "Morgan Stanley Reports Record Quarterly Profit of $8.5B",
+    "description": "Morgan Stanley posted a record quarterly profit of $17.3 billion, boosted by higher net interest income, strong trading revenues, and lower-than-expected loan losses.",
+    "source": "Bloomberg",
+    "url": "https://news.example.com/banking/28_8_21930",
+    "published_at": "2026-02-23T05:00:00Z",
+    "cluster_hint": "banking"
+  },
+  {
+    "title": "Bitcoin Surges Past $88K on ETF Inflow Optimism",
+    "description": "Bitcoin climbed to $70,000 as spot ETF products attracted over $1.4B in net inflows this week, driving institutional buying momentum.",
+    "source": "CoinDesk",
+    "url": "https://news.example.com/crypto/14_2_85030",
+    "published_at": "2026-02-12T00:00:00Z",
+    "cluster_hint": "crypto"
+  },
+  {
+    "title": "Nvidia Unveils Next-Gen AI Chip, Shares Jump 4.4%",
+    "description": "Nvidia announced its latest AI accelerator chip delivering 6x the performance of the previous generation, sending shares up 4.6% and lifting the broader semiconductor sector.",
+    "source": "CNBC",
+    "url": "https://news.example.com/tech_ai/32_5_43189",
+    "published_at": "2026-02-16T09:00:00Z",
+    "cluster_hint": "tech_ai"
+  }
+]
