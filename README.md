@@ -2,6 +2,8 @@
 
 # PulseIQ — Financial Narrative Intelligence Platform
 
+![PulseIQ Dashboard](dashboard1.png)
+
 ## Overview
 
 PulseIQ is an AI-powered financial news intelligence system that automatically discovers emerging financial themes from global news articles.
