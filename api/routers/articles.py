@@ -17,7 +17,7 @@ from backend.database import fetch_enriched_articles, get_connection
 
 router = APIRouter()
 
-MODELS_DIR      = Path("models")
+MODELS_DIR      = Path(__file__).resolve().parents[2] / "models"
 UMAP_2D_PATH    = MODELS_DIR / "umap_2d_coords.npy"
 ARTICLE_ID_PATH = MODELS_DIR / "clustered_ids.npy"
 

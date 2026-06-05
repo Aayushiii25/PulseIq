@@ -30,7 +30,10 @@ def main():
 
     if args.fetch:
         import os
-        key = os.getenv("NEWS_API_KEY", "60bedc90538343c28014f9b2e34ce758")
+        key = os.getenv("NEWS_API_KEY", "")
+        if not key:
+            log.error("Set NEWS_API_KEY env variable or pass --api-key. Get one at https://newsapi.org/register")
+            return
         log.info("── Stage 1/4: Fetching news from NewsAPI …")
         from backend.fetch_news import fetch_and_store
         n = fetch_and_store(api_key=key, days_back=14)

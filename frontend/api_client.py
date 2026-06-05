@@ -44,13 +44,21 @@ class PulseIQClient:
     def _get(self, path: str, params: dict | None = None) -> dict | list:
         resp = self.session.get(f"{self.base}{path}", params=params, timeout=TIMEOUT)
         if not resp.ok:
-            raise APIError(resp.status_code, resp.json().get("detail", resp.text))
+            try:
+                detail = resp.json().get("detail", resp.text)
+            except (ValueError, KeyError):
+                detail = resp.text
+            raise APIError(resp.status_code, detail)
         return resp.json()
 
     def _post(self, path: str, body: dict) -> dict:
         resp = self.session.post(f"{self.base}{path}", json=body, timeout=TIMEOUT)
         if not resp.ok:
-            raise APIError(resp.status_code, resp.json().get("detail", resp.text))
+            try:
+                detail = resp.json().get("detail", resp.text)
+            except (ValueError, KeyError):
+                detail = resp.text
+            raise APIError(resp.status_code, detail)
         return resp.json()
 
     # ── Health ─────────────────────────────────────────────────────────────────
@@ -60,7 +68,7 @@ class PulseIQClient:
         try:
             resp = self.session.get(f"{self.base}/health", timeout=3)
             return resp.ok
-        except requests.ConnectionError:
+        except requests.RequestException:
             return False
 
     # ── Stats ──────────────────────────────────────────────────────────────────

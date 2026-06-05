@@ -13,7 +13,7 @@ router = APIRouter()
 
 
 def _build_cluster_summary(label: int, articles: list[dict]) -> ClusterSummary:
-    scores   = [a["sentiment_score"] or 0.0 for a in articles]
+    scores   = [a["sentiment_score"] if a["sentiment_score"] is not None else 0.0 for a in articles]
     avg_sent = round(sum(scores) / len(scores), 4) if scores else 0.0
     return ClusterSummary(
         cluster_label=label,

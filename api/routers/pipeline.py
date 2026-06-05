@@ -40,10 +40,11 @@ def run_pipeline(req: PipelineRunRequest):
     """
     global _running
 
-    if _running:
+    if not _pipeline_lock.acquire(blocking=False):
         raise HTTPException(status_code=409, detail="A pipeline run is already in progress.")
 
     if req.run_fetch and not req.api_key:
+        _pipeline_lock.release()
         raise HTTPException(
             status_code=422,
             detail="api_key is required when run_fetch=true",
@@ -129,6 +130,7 @@ def run_pipeline(req: PipelineRunRequest):
 
     finally:
         _running = False
+        _pipeline_lock.release()
 
     total_elapsed = round(time.perf_counter() - overall_start, 2)
     all_ok        = all(s.success for s in stages_done)

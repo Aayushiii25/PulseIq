@@ -26,7 +26,7 @@ import logging
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-from backend.database import fetch_all_articles, upsert_sentiment
+from backend.database import fetch_all_articles, upsert_sentiments_batch, get_analysed_article_ids
 
 # ── Logging ────────────────────────────────────────────────────────────────────
 logging.basicConfig(level=logging.INFO, format="%(levelname)s  %(message)s")
@@ -134,12 +134,20 @@ def run_sentiment_analysis(batch_size: int = BATCH_SIZE) -> int:
     Returns:
         Number of articles analysed.
     """
-    articles = fetch_all_articles()
-    if not articles:
+    all_articles = fetch_all_articles()
+    if not all_articles:
         log.warning("No articles in DB — run fetch_news.py first.")
         return 0
 
-    log.info("📰  Analysing sentiment for %d articles.", len(articles))
+    # Skip articles that already have sentiment (incremental mode)
+    already_done = get_analysed_article_ids()
+    articles = [a for a in all_articles if a["id"] not in already_done]
+
+    if not articles:
+        log.info("✅  All %d articles already analysed — nothing to do.", len(all_articles))
+        return 0
+
+    log.info("📰  Analysing sentiment for %d new articles (%d already done).", len(articles), len(already_done))
 
     device = get_device()
     log.info("📦  Loading FinBERT ('%s') …", MODEL_NAME)
@@ -149,17 +157,21 @@ def run_sentiment_analysis(batch_size: int = BATCH_SIZE) -> int:
 
     total = len(articles)
     processed = 0
+    results: list[tuple[int, str, float]] = []
 
     for batch_start in range(0, total, batch_size):
         batch   = articles[batch_start : batch_start + batch_size]
         texts   = [build_text(a) for a in batch]
-        results = analyse_batch(texts, tokeniser, model, device)
+        batch_results = analyse_batch(texts, tokeniser, model, device)
 
-        for article, (label, score) in zip(batch, results):
-            upsert_sentiment(article["id"], label, score)
+        for article, (label, score) in zip(batch, batch_results):
+            results.append((article["id"], label, score))
 
         processed += len(batch)
         log.info("  Progress: %d / %d", processed, total)
+
+    # Batch write all results in one connection
+    upsert_sentiments_batch(results)
 
     log.info("✅  Sentiment analysis complete.")
     return total

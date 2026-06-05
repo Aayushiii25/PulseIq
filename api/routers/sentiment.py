@@ -21,7 +21,7 @@ def _build_overview(articles: list[dict]) -> SentimentOverview:
     pos = sum(1 for a in analysed if a["sentiment_label"] == "positive")
     neu = sum(1 for a in analysed if a["sentiment_label"] == "neutral")
     neg = sum(1 for a in analysed if a["sentiment_label"] == "negative")
-    scores = [a["sentiment_score"] or 0.0 for a in analysed]
+    scores = [a["sentiment_score"] if a["sentiment_score"] is not None else 0.0 for a in analysed]
     avg    = round(sum(scores) / total, 4) if total else 0.0
 
     # ── Daily timeline ─────────────────────────────────────────────────────────
@@ -36,7 +36,7 @@ def _build_overview(articles: list[dict]) -> SentimentOverview:
             continue
         d = daily[pub]
         d["count"]     += 1
-        d["score_sum"] += a["sentiment_score"] or 0.0
+        d["score_sum"] += a["sentiment_score"] if a["sentiment_score"] is not None else 0.0
         d[a["sentiment_label"]] += 1
 
     timeline = sorted(

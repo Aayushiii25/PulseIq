@@ -229,6 +229,55 @@ def fetch_sentiment() -> dict[int, dict]:
     return {r["article_id"]: {"label": r["label"], "score": r["sentiment_score"]} for r in rows}
 
 
+# ── batch embedding upsert ─────────────────────────────────────────────────────
+
+def upsert_embeddings_batch(article_ids: list[int], vectors: np.ndarray) -> None:
+    """Save or overwrite embeddings for a batch of articles in one connection."""
+    conn = get_connection()
+    for aid, vec in zip(article_ids, vectors):
+        blob = vec.astype(np.float32).tobytes()
+        conn.execute(
+            """INSERT INTO embeddings (article_id, vector, dim)
+               VALUES (?, ?, ?)
+               ON CONFLICT(article_id) DO UPDATE SET vector=excluded.vector, dim=excluded.dim""",
+            (aid, blob, len(vec)),
+        )
+    conn.commit()
+    conn.close()
+
+
+def get_embedded_article_ids() -> set[int]:
+    """Return the set of article IDs that already have embeddings."""
+    conn = get_connection()
+    rows = conn.execute("SELECT article_id FROM embeddings").fetchall()
+    conn.close()
+    return {r["article_id"] for r in rows}
+
+
+# ── batch sentiment upsert ─────────────────────────────────────────────────────
+
+def upsert_sentiments_batch(records: list[tuple[int, str, float]]) -> None:
+    """Bulk upsert sentiment results — list of (article_id, label, score)."""
+    conn = get_connection()
+    conn.executemany(
+        """INSERT INTO sentiment (article_id, label, sentiment_score)
+           VALUES (?, ?, ?)
+           ON CONFLICT(article_id) DO UPDATE SET label=excluded.label,
+                                                  sentiment_score=excluded.sentiment_score""",
+        records,
+    )
+    conn.commit()
+    conn.close()
+
+
+def get_analysed_article_ids() -> set[int]:
+    """Return the set of article IDs that already have sentiment scores."""
+    conn = get_connection()
+    rows = conn.execute("SELECT article_id FROM sentiment").fetchall()
+    conn.close()
+    return {r["article_id"] for r in rows}
+
+
 # ── combined view ──────────────────────────────────────────────────────────────
 
 def fetch_enriched_articles() -> list[dict]:
@@ -259,3 +308,4 @@ def fetch_enriched_articles() -> list[dict]:
 
 if __name__ == "__main__":
     init_db()
+

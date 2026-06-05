@@ -22,7 +22,7 @@ import numpy as np
 import torch
 from sentence_transformers import SentenceTransformer
 
-from backend.database import fetch_all_articles, upsert_embedding
+from backend.database import fetch_all_articles, upsert_embeddings_batch, get_embedded_article_ids
 
 # ── Logging ────────────────────────────────────────────────────────────────────
 logging.basicConfig(level=logging.INFO, format="%(levelname)s  %(message)s")
@@ -98,12 +98,20 @@ def embed_articles(batch_size: int = BATCH_SIZE) -> int:
     Returns:
         Number of articles embedded.
     """
-    articles = fetch_all_articles()
-    if not articles:
+    all_articles = fetch_all_articles()
+    if not all_articles:
         log.warning("No articles found in DB — run fetch_news.py first.")
         return 0
 
-    log.info("📰  %d articles to embed.", len(articles))
+    # Skip articles that already have embeddings (incremental mode)
+    already_done = get_embedded_article_ids()
+    articles = [a for a in all_articles if a["id"] not in already_done]
+
+    if not articles:
+        log.info("✅  All %d articles already embedded — nothing to do.", len(all_articles))
+        return 0
+
+    log.info("📰  %d new articles to embed (%d already done).", len(articles), len(already_done))
 
     device = get_device()
     log.info("📦  Loading model '%s' …", MODEL_ID)
@@ -124,10 +132,10 @@ def embed_articles(batch_size: int = BATCH_SIZE) -> int:
     log.info("✅  Embeddings shape: %s", embeddings.shape)
 
     log.info("💾  Persisting vectors to DB …")
-    for article, vector in zip(articles, embeddings):
-        upsert_embedding(article["id"], vector)
+    ids = [a["id"] for a in articles]
+    upsert_embeddings_batch(ids, embeddings)
 
-    log.info("✅  %d embeddings saved.", len(articles))
+    log.info("✅  %d new embeddings saved.", len(articles))
     return len(articles)
 
 

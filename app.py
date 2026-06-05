@@ -10,6 +10,7 @@ Run order:
 """
 
 import time
+import html as html_mod
 import pandas as pd
 import streamlit as st
 import plotly.express as px
@@ -84,6 +85,10 @@ section[data-testid="stSidebar"] { background: #0d1b2e; border-right: 1px solid 
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
+def esc(text: str) -> str:
+    """HTML-escape user-provided text to prevent XSS."""
+    return html_mod.escape(str(text)) if text else ""
+
 def badge_html(label: str, score: float | None = None) -> str:
     cls = {"positive":"b-pos","neutral":"b-neu","negative":"b-neg"}.get(label,"b-neu")
     ico = {"positive":"▲","neutral":"●","negative":"▼"}.get(label,"●")
@@ -103,6 +108,10 @@ def api_umap():          return client.get_umap_coords()
 def api_sentiment():     return client.get_sentiment_overview()
 @st.cache_data(ttl=30)
 def api_articles(**kw):  return client.get_articles(**kw)
+@st.cache_data(ttl=30)
+def api_timeline():      return client.get_sentiment_timeline()
+@st.cache_data(ttl=30)
+def api_cluster(label):  return client.get_cluster(label)
 
 api_ok = client.is_reachable()
 
@@ -308,7 +317,7 @@ with col_donut:
 st.markdown('<div class="sec-title">📅 Sentiment Timeline</div>', unsafe_allow_html=True)
 if stats["pipeline_status"].get("analysed"):
     try:
-        tl = client.get_sentiment_timeline()
+        tl = api_timeline()
         if tl:
             df_t = pd.DataFrame(tl)
             fig_t = go.Figure()
@@ -351,7 +360,7 @@ else:
             sel_id   = opts[sel_name]
             accent   = PALETTE[sel_id % len(PALETTE)]
 
-            detail   = client.get_cluster(sel_id)
+            detail   = api_cluster(sel_id)
             k1,k2,k3,k4,k5 = st.columns(5)
             k1.metric("Articles",       detail["article_count"])
             k2.metric("Avg Sentiment",  f"{detail['avg_sentiment']:+.2f}")
@@ -360,18 +369,21 @@ else:
             k5.metric("🔴 Negative",    detail["negative_count"])
 
             arts = [a for a in detail["articles"] if a.get("sentiment_label","neutral") in sent_filter]
-            arts = sorted(arts, key=lambda a: a.get("sentiment_score") or 0, reverse=True)
+            arts = sorted(arts, key=lambda a: a.get("sentiment_score") if a.get("sentiment_score") is not None else 0, reverse=True)
             st.markdown(f"**{len(arts)} articles** (sorted by sentiment score)")
 
             for a in arts[:25]:
                 sl  = a.get("sentiment_label","neutral")
                 ss  = a.get("sentiment_score")
                 pub = (a.get("published_at") or "")[:10]
-                desc= (a.get("description") or "")[:160]
+                desc= esc((a.get("description") or "")[:160])
+                title_safe = esc(a.get("title", ""))
+                src_safe   = esc(a.get("source", ""))
+                url_safe   = esc(a.get("url", ""))
                 st.markdown(f"""
                 <div class="art-card" style="border-left-color:{accent}">
-                  <a href="{a['url']}" target="_blank" class="art-title">{a['title']}</a>
-                  <div class="art-meta">{a.get('source','')} · {pub} · {badge_html(sl,ss)}</div>
+                  <a href="{url_safe}" target="_blank" class="art-title">{title_safe}</a>
+                  <div class="art-meta">{src_safe} · {pub} · {badge_html(sl,ss)}</div>
                   {"<div class='art-desc'>"+desc+"…</div>" if desc else ""}
                 </div>""", unsafe_allow_html=True)
     except APIError as e:
@@ -397,13 +409,16 @@ if search_q or browse:
             ss   = a.get("sentiment_score")
             cl   = a.get("cluster_label")
             pub  = (a.get("published_at") or "")[:10]
-            desc = (a.get("description") or "")[:160]
+            desc = esc((a.get("description") or "")[:160])
+            title_safe = esc(a.get("title", ""))
+            src_safe   = esc(a.get("source", ""))
+            url_safe   = esc(a.get("url", ""))
             acc  = cluster_colour(cl if cl is not None else -1)
             cl_lbl = f'<span class="mono" style="color:{acc}">cluster {cl}</span>' if cl not in (None,-1) else ""
             st.markdown(f"""
             <div class="art-card" style="border-left-color:{acc}">
-              <a href="{a['url']}" target="_blank" class="art-title">{a['title']}</a>
-              <div class="art-meta">{a.get('source','')} · {pub} · {badge_html(sl,ss)} {cl_lbl}</div>
+              <a href="{url_safe}" target="_blank" class="art-title">{title_safe}</a>
+              <div class="art-meta">{src_safe} · {pub} · {badge_html(sl,ss)} {cl_lbl}</div>
               {"<div class='art-desc'>"+desc+"…</div>" if desc else ""}
             </div>""", unsafe_allow_html=True)
     except APIError as e:
