@@ -33,12 +33,12 @@ Instead of manually reading hundreds of articles, PulseIQ surfaces the **major n
 
 ```mermaid
 flowchart TB
-    subgraph DATA ["📰 Data Ingestion"]
+    subgraph DATA [" Data Ingestion"]
         A["NewsAPI\n/v2/everything"] -->|HTTP| B["fetch_news.py"]
         B -->|INSERT| C[("SQLite DB\narticles table")]
     end
 
-    subgraph ML ["🧠 ML Pipeline"]
+    subgraph ML [" ML Pipeline"]
         C -->|SELECT| D["embed_articles.py"]
         D -->|"GTE-small\n384-dim vectors"| E[("embeddings table")]
         E -->|SELECT| F["cluster_articles.py"]
@@ -51,7 +51,7 @@ flowchart TB
         J["FastAPI\nlocalhost:8000"]
     end
 
-    subgraph UI ["📊 Frontend"]
+    subgraph UI [" Frontend"]
         K["Streamlit Dashboard\nlocalhost:8501"]
     end
 
@@ -234,14 +234,14 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A["📄 Article Text"] --> B["🔤 BERT Tokenizer\nmax 512 tokens"]
-    B --> C["🧠 FinBERT\nProsusAI/finbert\n110M params"]
+    A[" Article Text"] --> B[" BERT Tokenizer\nmax 512 tokens"]
+    B --> C[" FinBERT\nProsusAI/finbert\n110M params"]
     C --> D["Softmax"]
     D --> E["P(positive)"]
     D --> F["P(neutral)"]
     D --> G["P(negative)"]
     E & G --> H["Score = P(pos) − P(neg)\nrange: -1.0 to +1.0"]
-    H --> I["📊 Label + Score\nper article"]
+    H --> I[" Label + Score\nper article"]
 
     style A fill:#1e293b,stroke:#475569,color:#e2e8f0
     style B fill:#1e293b,stroke:#475569,color:#e2e8f0
