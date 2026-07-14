@@ -2,14 +2,11 @@
 backend/pipeline.py — PulseIQ Full ML Pipeline Orchestrator
 ============================================================
 Runs every stage in sequence:
-  1. fetch_news        — pull articles from NewsAPI
-  2. embed_articles    — generate sentence-transformer vectors
-  3. cluster_articles  — PCA → UMAP → HDBSCAN
-  4. sentiment_analysis — FinBERT per-article scoring
-
-Usage:
-    python -m backend.pipeline
-    python -m backend.pipeline --skip-fetch   (use articles already in DB)
+  1. fetch_news & fetch_rss
+  2. embed_articles
+  3. cluster_articles (PCA → UMAP → HDBSCAN)
+  4. sentiment_analysis (FinBERT)
+  5. market_benchmark
 """
 
 import argparse
@@ -20,43 +17,56 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s  %(message)s")
 log = logging.getLogger(__name__)
 
 
-def run_pipeline(skip_fetch: bool = False, api_key: str = "") -> None:
+def run_pipeline(skip_fetch: bool = False, api_key: str = "") -> dict:
     start = time.perf_counter()
     banner("PulseIQ — Full ML Pipeline")
 
-    # ── Stage 1: Fetch ────────────────────────────────────────────────────────
+    results = {}
+
     if not skip_fetch:
-        stage("1 / 4  Fetching financial news …")
+        stage("1 / 5  Fetching financial news & RSS …")
+        
         from backend.fetch_news import fetch_and_store
-        n = fetch_and_store(api_key=api_key)
-        log.info("   → %d new articles stored.\n", n)
+        n_news = fetch_and_store(api_key=api_key)
+        
+        from backend.fetch_rss import fetch_and_store_rss
+        n_rss = fetch_and_store_rss()
+        
+        log.info("   → %d new articles stored from NewsAPI.", n_news)
+        log.info("   → %d new articles stored from RSS.", n_rss)
+        results['fetch'] = n_news + n_rss
     else:
         log.info("⏩  Skipping fetch stage.\n")
 
-    # ── Stage 2: Embed ────────────────────────────────────────────────────────
-    stage("2 / 4  Generating embeddings …")
+    stage("2 / 5  Generating embeddings …")
     from backend.embed_articles import embed_articles
-    embed_articles()
+    n_embed = embed_articles()
+    results['embed'] = n_embed
     print()
 
-    # ── Stage 3: Cluster ──────────────────────────────────────────────────────
-    stage("3 / 4  Clustering articles …")
+    stage("3 / 5  Clustering articles …")
     from backend.cluster_articles import cluster_articles
     summary = cluster_articles()
     if summary:
         log.info("   → %d clusters discovered.\n", summary.get("n_clusters", 0))
+    results['cluster'] = summary
 
-    # ── Stage 4: Sentiment ────────────────────────────────────────────────────
-    stage("4 / 4  Running FinBERT sentiment analysis …")
+    stage("4 / 5  Running FinBERT sentiment analysis …")
     from backend.sentiment_analysis import run_sentiment_analysis
-    run_sentiment_analysis()
+    n_sent = run_sentiment_analysis()
+    results['sentiment'] = n_sent
+
+    stage("5 / 5  Market Benchmark Correlation …")
+    from backend.market_benchmark import calculate_correlations
+    calculate_correlations()
+    results['benchmark'] = True
 
     elapsed = time.perf_counter() - start
     banner(f"Pipeline complete  ({elapsed:.1f}s)")
-    log.info("Launch the dashboard:  streamlit run app.py")
+    
+    results['elapsed_time'] = elapsed
+    return results
 
-
-# ── Helpers ────────────────────────────────────────────────────────────────────
 
 def banner(msg: str) -> None:
     log.info("━" * 55)
@@ -68,11 +78,11 @@ def stage(msg: str) -> None:
     log.info("\n── %s", msg)
 
 
-# ── CLI ────────────────────────────────────────────────────────────────────────
-
 if __name__ == "__main__":
+    from config import settings
     parser = argparse.ArgumentParser(description="Run the PulseIQ ML pipeline end-to-end")
     parser.add_argument("--skip-fetch", action="store_true", help="Skip the news-fetching stage")
     parser.add_argument("--api-key",   default="",           help="NewsAPI key")
     args = parser.parse_args()
-    run_pipeline(skip_fetch=args.skip_fetch, api_key=args.api_key)
+    key = args.api_key or settings.news_api_key
+    run_pipeline(skip_fetch=args.skip_fetch, api_key=key)

@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: pulseiq
+      POSTGRES_PASSWORD: pulsepassword
+      POSTGRES_DB: pulseiq_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pulseiq -d pulseiq_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: .
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000
+    environment:
+      - DATABASE_URL=postgresql://pulseiq:pulsepassword@postgres:5432/pulseiq_db
+      - NEWS_API_KEY=${NEWS_API_KEY:-}
+      - SCHEDULER_INTERVAL_MINUTES=30
+      - API_KEY_SECRET=supersecret
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  frontend:
+    build: .
+    command: streamlit run app.py --server.address 0.0.0.0
+    environment:
+      - PULSEIQ_API_URL=http://backend:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:

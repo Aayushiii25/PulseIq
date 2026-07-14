@@ -41,6 +41,7 @@ class ClusterSummary(BaseModel):
     neutral_count:   int
     negative_count:  int
     top_titles:      list[str] = Field(default_factory=list)
+    cluster_name:    Optional[str] = None
 
 
 class ClusterDetail(ClusterSummary):
@@ -58,6 +59,7 @@ class UMAPPoint(BaseModel):
     source:          Optional[str]  = None
     sentiment_label: Optional[str]  = None
     sentiment_score: Optional[float] = None
+    cluster_name:    Optional[str]  = None
 
 
 # ── Sentiment ──────────────────────────────────────────────────────────────────

@@ -24,6 +24,17 @@ hdbscan>=0.8.33
 # ── Data & HTTP ───────────────────────────────────────────────────────────────
 requests>=2.31.0
 python-dotenv>=1.0.0
+pydantic-settings>=2.0.0
+sqlalchemy>=2.0.0
+psycopg2-binary>=2.9.0
+apscheduler>=3.10.0
+feedparser>=6.0.10
+rapidfuzz>=3.0.0
+yfinance>=0.2.0
+cachetools>=5.3.0
+slowapi>=0.1.0
+sse-starlette>=2.0.0
+tenacity>=8.2.0
 
 # ── Dashboard ─────────────────────────────────────────────────────────────────
 streamlit>=1.35.0

@@ -9,9 +9,10 @@ from collections import defaultdict
 from fastapi import APIRouter
 from backend.database import fetch_enriched_articles
 from api.schemas import SentimentOverview, SentimentTimelinePoint
+from cachetools import cached, TTLCache
 
 router = APIRouter()
-
+cache = TTLCache(maxsize=10, ttl=60)
 
 def _build_overview(articles: list[dict]) -> SentimentOverview:
     """Compute sentiment overview from a list of enriched article dicts."""
@@ -24,7 +25,6 @@ def _build_overview(articles: list[dict]) -> SentimentOverview:
     scores = [a["sentiment_score"] if a["sentiment_score"] is not None else 0.0 for a in analysed]
     avg    = round(sum(scores) / total, 4) if total else 0.0
 
-    # ── Daily timeline ─────────────────────────────────────────────────────────
     daily: dict[str, dict] = defaultdict(lambda: {
         "count": 0, "score_sum": 0.0,
         "positive": 0, "neutral": 0, "negative": 0,
@@ -65,12 +65,14 @@ def _build_overview(articles: list[dict]) -> SentimentOverview:
 
 
 @router.get("/sentiment/overview", response_model=SentimentOverview)
+@cached(cache)
 def sentiment_overview():
     """Full sentiment overview with daily timeline."""
     return _build_overview(fetch_enriched_articles())
 
 
 @router.get("/sentiment/timeline", response_model=list[SentimentTimelinePoint])
+@cached(cache)
 def sentiment_timeline():
     """Daily sentiment timeline only (lighter payload)."""
     return _build_overview(fetch_enriched_articles()).timeline

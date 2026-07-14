@@ -20,12 +20,13 @@ Instead of manually reading hundreds of articles, PulseIQ surfaces the **major n
 |-------|-----------|
 | **Embeddings** | `thenlper/gte-small` (SentenceTransformers, 384-dim) |
 | **Dim. Reduction** | PCA (50d) → UMAP (5d for clustering, 2d for viz) |
-| **Clustering** | HDBSCAN (auto-detects # of clusters, handles noise) |
+| **Clustering** | HDBSCAN (auto-detects # of clusters, handles noise) + TF-IDF cluster naming |
 | **Sentiment** | ProsusAI/FinBERT (fine-tuned on financial text) |
-| **Backend API** | FastAPI + Pydantic |
+| **Backend API** | FastAPI + Pydantic + SlowAPI (Rate Limiting) |
 | **Frontend** | Streamlit + Plotly |
-| **Database** | SQLite |
-| **Data Source** | NewsAPI (financial news) |
+| **Database** | SQLAlchemy (SQLite local / PostgreSQL production) |
+| **Data Source** | NewsAPI + RSS (financial news) with APScheduler & RapidFuzz deduplication |
+| **Real-time** | Server-Sent Events (SSE) for pipeline streaming |
 
 ---
 
@@ -33,9 +34,9 @@ Instead of manually reading hundreds of articles, PulseIQ surfaces the **major n
 
 ```mermaid
 flowchart TB
-    subgraph DATA [" Data Ingestion"]
-        A["NewsAPI\n/v2/everything"] -->|HTTP| B["fetch_news.py"]
-        B -->|INSERT| C[("SQLite DB\narticles table")]
+    subgraph DATA ["📰 Data Ingestion"]
+        A["NewsAPI\n/v2/everything & RSS"] -->|HTTP| B["fetch_news.py\n(APScheduler & RapidFuzz)"]
+        B -->|INSERT| C[("SQLAlchemy DB\narticles table")]
     end
 
     subgraph ML [" ML Pipeline"]
@@ -73,22 +74,26 @@ The frontend **never** imports from `backend/` — all data flows through the HT
 ```
 PulseIq/
 ├── backend/
-│   ├── database.py            # SQLite helper (schema, CRUD, batch ops)
-│   ├── fetch_news.py          # NewsAPI ingestion
+│   ├── database.py            # SQLAlchemy helper (schema, CRUD, batch ops)
+│   ├── fetch_news.py          # NewsAPI ingestion (fuzzy deduplication)
+│   ├── fetch_rss.py           # RSS fallback ingestion
+│   ├── scheduler.py           # APScheduler background pipeline runner
 │   ├── embed_articles.py      # GTE-small embedding generation
-│   ├── cluster_articles.py    # PCA → UMAP → HDBSCAN pipeline
+│   ├── cluster_articles.py    # PCA → UMAP → HDBSCAN + TF-IDF naming & tracking
 │   ├── sentiment_analysis.py  # FinBERT sentiment scoring
+│   ├── market_benchmark.py    # SPY correlation testing
 │   └── pipeline.py            # Orchestrates all stages end-to-end
 │
 ├── api/
 │   ├── main.py                # FastAPI app (mounts all routers)
 │   ├── schemas.py             # Pydantic request/response models
 │   └── routers/
-│       ├── articles.py        # GET /api/articles, UMAP coords
-│       ├── clusters.py        # GET /api/clusters
-│       ├── sentiment.py       # GET /api/sentiment/overview + timeline
-│       ├── pipeline.py        # POST /api/pipeline/run
-│       └── stats.py           # GET /api/stats
+│       ├── articles.py        # GET /api/articles, UMAP coords (Cached)
+│       ├── clusters.py        # GET /api/clusters (Cached)
+│       ├── sentiment.py       # GET /api/sentiment/overview + timeline (Cached)
+│       ├── pipeline.py        # POST /api/pipeline/run (Auth Required)
+│       ├── realtime.py        # GET /api/pipeline/stream (SSE)
+│       └── stats.py           # GET /api/stats (Cached)
 │
 ├── frontend/
 │   └── api_client.py          # HTTP client for Streamlit ↔ FastAPI

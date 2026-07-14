@@ -6,13 +6,14 @@ GET /api/clusters/{label}    — one cluster with full article list
 """
 
 from fastapi import APIRouter, HTTPException
-from backend.database import fetch_enriched_articles
+from backend.database import fetch_enriched_articles, get_latest_cluster_history
 from api.schemas import ClusterSummary, ClusterDetail, ArticleEnriched
+from cachetools import cached, TTLCache
 
 router = APIRouter()
+cache = TTLCache(maxsize=10, ttl=60)
 
-
-def _build_cluster_summary(label: int, articles: list[dict]) -> ClusterSummary:
+def _build_cluster_summary(label: int, articles: list[dict], name: str = None) -> ClusterSummary:
     scores   = [a["sentiment_score"] if a["sentiment_score"] is not None else 0.0 for a in articles]
     avg_sent = round(sum(scores) / len(scores), 4) if scores else 0.0
     return ClusterSummary(
@@ -23,20 +24,18 @@ def _build_cluster_summary(label: int, articles: list[dict]) -> ClusterSummary:
         neutral_count =sum(1 for a in articles if a.get("sentiment_label") == "neutral"),
         negative_count=sum(1 for a in articles if a.get("sentiment_label") == "negative"),
         top_titles=[a["title"] for a in articles[:5]],
+        cluster_name=name
     )
 
 
-# ── GET /api/clusters ─────────────────────────────────────────────────────────
-
 @router.get("/clusters", response_model=list[ClusterSummary])
+@cached(cache)
 def list_clusters():
-    """
-    Return a summary for every cluster (excluding noise label -1).
-    Sorted by article count descending so the biggest themes come first.
-    """
     all_articles = fetch_enriched_articles()
+    cluster_history = get_latest_cluster_history()
+    
+    names_map = {r["current_label"]: r["human_name"] for r in cluster_history}
 
-    # Group by cluster_label
     groups: dict[int, list[dict]] = {}
     for a in all_articles:
         label = a.get("cluster_label")
@@ -45,24 +44,29 @@ def list_clusters():
         groups.setdefault(label, []).append(a)
 
     summaries = [
-        _build_cluster_summary(label, arts)
+        _build_cluster_summary(label, arts, names_map.get(label))
         for label, arts in groups.items()
     ]
     return sorted(summaries, key=lambda s: s.article_count, reverse=True)
 
 
-# ── GET /api/clusters/{label} ─────────────────────────────────────────────────
-
 @router.get("/clusters/{label}", response_model=ClusterDetail)
 def get_cluster(label: int):
-    """Return full detail for one cluster including all its articles."""
     all_articles = fetch_enriched_articles()
+    cluster_history = get_latest_cluster_history()
+    
+    name = None
+    for r in cluster_history:
+        if r["current_label"] == label:
+            name = r["human_name"]
+            break
+            
     cluster_arts = [a for a in all_articles if a.get("cluster_label") == label]
 
     if not cluster_arts:
         raise HTTPException(status_code=404, detail=f"Cluster {label} not found")
 
-    summary = _build_cluster_summary(label, cluster_arts)
+    summary = _build_cluster_summary(label, cluster_arts, name)
     return ClusterDetail(
         **summary.model_dump(),
         articles=[ArticleEnriched(**a) for a in cluster_arts],

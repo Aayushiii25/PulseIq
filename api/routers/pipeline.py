@@ -3,67 +3,44 @@ api/routers/pipeline.py
 =======================
 POST /api/pipeline/run     — run selected pipeline stages
 GET  /api/pipeline/status  — check if a pipeline is currently running
-
-The pipeline runs synchronously per-request (fine for a single-user dev
-tool). For production you'd push this to a Celery / RQ background worker
-and return a job-id that the frontend polls.
 """
 
 import time
 import threading
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, BackgroundTasks, Depends
 from api.schemas import PipelineRunRequest, PipelineRunResponse, PipelineStageResult
+from api.dependencies import get_api_key
 
 router = APIRouter()
 
-# Simple in-process lock so two pipeline runs can't overlap
 _pipeline_lock = threading.Lock()
 _running       = False
+_last_result   = None
 
 
 @router.get("/pipeline/status")
 def pipeline_status():
     """Check whether a pipeline run is currently in progress."""
-    return {"running": _running}
+    return {"running": _running, "last_result": _last_result}
 
-
-@router.post("/pipeline/run", response_model=PipelineRunResponse)
-def run_pipeline(req: PipelineRunRequest):
-    """
-    Execute selected pipeline stages in sequence and return per-stage results.
-
-    Stages (each optional via request body flags):
-      1. fetch_news        — pull articles from NewsAPI
-      2. embed_articles    — generate transformer embeddings
-      3. cluster_articles  — PCA → UMAP → HDBSCAN
-      4. sentiment_analysis — FinBERT scoring
-    """
-    global _running
-
-    if not _pipeline_lock.acquire(blocking=False):
-        raise HTTPException(status_code=409, detail="A pipeline run is already in progress.")
-
-    if req.run_fetch and not req.api_key:
-        _pipeline_lock.release()
-        raise HTTPException(
-            status_code=422,
-            detail="api_key is required when run_fetch=true",
-        )
-
+def execute_pipeline(req: PipelineRunRequest):
+    global _running, _last_result
+    
     _running      = True
     stages_done:  list[PipelineStageResult] = []
     overall_start = time.perf_counter()
 
     try:
-        # ── Stage 1: Fetch ─────────────────────────────────────────────────────
         if req.run_fetch:
             t0 = time.perf_counter()
             try:
                 from backend.fetch_news import fetch_and_store
-                n = fetch_and_store(api_key=req.api_key, days_back=req.days_back)
+                from backend.fetch_rss import fetch_and_store_rss
+                n1 = fetch_and_store(api_key=req.api_key, days_back=req.days_back)
+                n2 = fetch_and_store_rss()
                 stages_done.append(PipelineStageResult(
                     stage="fetch", success=True,
-                    message=f"{n} new articles stored",
+                    message=f"{n1} API articles, {n2} RSS articles stored",
                     elapsed=round(time.perf_counter() - t0, 2),
                 ))
             except Exception as exc:
@@ -73,7 +50,6 @@ def run_pipeline(req: PipelineRunRequest):
                     elapsed=round(time.perf_counter() - t0, 2),
                 ))
 
-        # ── Stage 2: Embed ─────────────────────────────────────────────────────
         if req.run_embed:
             t0 = time.perf_counter()
             try:
@@ -91,7 +67,6 @@ def run_pipeline(req: PipelineRunRequest):
                     elapsed=round(time.perf_counter() - t0, 2),
                 ))
 
-        # ── Stage 3: Cluster ───────────────────────────────────────────────────
         if req.run_cluster:
             t0 = time.perf_counter()
             try:
@@ -110,15 +85,19 @@ def run_pipeline(req: PipelineRunRequest):
                     elapsed=round(time.perf_counter() - t0, 2),
                 ))
 
-        # ── Stage 4: Sentiment ─────────────────────────────────────────────────
         if req.run_sentiment:
             t0 = time.perf_counter()
             try:
                 from backend.sentiment_analysis import run_sentiment_analysis
                 n = run_sentiment_analysis()
+                
+                # also run market correlation
+                from backend.market_benchmark import calculate_correlations
+                calculate_correlations()
+                
                 stages_done.append(PipelineStageResult(
                     stage="sentiment", success=True,
-                    message=f"{n} articles analysed",
+                    message=f"{n} articles analysed + correlated",
                     elapsed=round(time.perf_counter() - t0, 2),
                 ))
             except Exception as exc:
@@ -129,14 +108,35 @@ def run_pipeline(req: PipelineRunRequest):
                 ))
 
     finally:
+        total_elapsed = round(time.perf_counter() - overall_start, 2)
+        all_ok        = all(s.success for s in stages_done)
+        
+        result = PipelineRunResponse(
+            success=all_ok,
+            total_elapsed=total_elapsed,
+            stages=stages_done,
+        )
+        _last_result = result.model_dump()
         _running = False
         _pipeline_lock.release()
 
-    total_elapsed = round(time.perf_counter() - overall_start, 2)
-    all_ok        = all(s.success for s in stages_done)
+@router.post("/pipeline/run", dependencies=[Depends(get_api_key)])
+def run_pipeline(req: PipelineRunRequest, background_tasks: BackgroundTasks):
+    global _running
 
-    return PipelineRunResponse(
-        success=all_ok,
-        total_elapsed=total_elapsed,
-        stages=stages_done,
-    )
+    if not _pipeline_lock.acquire(blocking=False):
+        raise HTTPException(status_code=409, detail="A pipeline run is already in progress.")
+
+    if req.run_fetch and not req.api_key:
+        from config import settings
+        if not settings.news_api_key:
+            _pipeline_lock.release()
+            raise HTTPException(
+                status_code=422,
+                detail="api_key is required when run_fetch=true",
+            )
+        else:
+            req.api_key = settings.news_api_key
+
+    background_tasks.add_task(execute_pipeline, req)
+    return {"message": "Pipeline execution started in the background."}

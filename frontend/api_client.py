@@ -131,6 +131,11 @@ class PulseIQClient:
         """GET /api/pipeline/status"""
         return self._get("/api/pipeline/status")
 
+    def stream_pipeline_status(self):
+        import sseclient
+        response = self.session.get(f"{self.base}/api/pipeline/stream", stream=True)
+        return sseclient.SSEClient(response)
+
     def run_pipeline(
         self,
         api_key:       str  = "",

@@ -141,24 +141,38 @@ with st.sidebar:
         if run_fetch and not api_key:
             st.error("Paste your NewsAPI key above.")
         else:
-            log_box = st.empty()
-            with st.spinner("Pipeline running…"):
-                try:
-                    result = client.run_pipeline(
-                        api_key=api_key, run_fetch=run_fetch, run_embed=run_embed,
-                        run_cluster=run_cluster, run_sentiment=run_sentiment, days_back=days_back,
-                    )
-                    lines = []
-                    for s in result["stages"]:
-                        ico = "✅" if s["success"] else "❌"
-                        lines.append(f"{ico} [{s['stage']:10}] {s['message']}  ({s['elapsed']}s)")
-                    lines.append(f"\n⏱ Total: {result['total_elapsed']}s")
-                    log_box.code("\n".join(lines))
-                    st.cache_data.clear()
-                    time.sleep(1.5)
-                    st.rerun()
-                except APIError as e:
-                    st.error(f"Error {e.status_code}: {e.detail}")
+            try:
+                client.run_pipeline(
+                    api_key=api_key, run_fetch=run_fetch, run_embed=run_embed,
+                    run_cluster=run_cluster, run_sentiment=run_sentiment, days_back=days_back,
+                )
+                
+                log_box = st.empty()
+                with st.spinner("Pipeline running in background... listening to live status"):
+                    stream = client.stream_pipeline_status()
+                    for event in stream.events():
+                        import json
+                        data = json.loads(event.data)
+                        if data.get("running"):
+                            log_box.info("Pipeline is actively processing...")
+                        elif data.get("last_result"):
+                            result = data["last_result"]
+                            lines = []
+                            for s in result["stages"]:
+                                ico = "✅" if s["success"] else "❌"
+                                lines.append(f"{ico} [{s['stage']:10}] {s['message']}  ({s['elapsed']}s)")
+                            lines.append(f"\\n⏱ Total: {result['total_elapsed']}s")
+                            log_box.code("\\n".join(lines))
+                            st.cache_data.clear()
+                            time.sleep(2.0)
+                            st.rerun()
+                            break
+                        else:
+                            st.rerun()
+                            break
+                            
+            except APIError as e:
+                st.error(f"Error {e.status_code}: {e.detail}")
 
     st.markdown("---")
     st.markdown("#### 🔎 Filters")
