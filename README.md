@@ -23,7 +23,7 @@ Instead of manually reading hundreds of articles, PulseIQ surfaces the **major n
 | **Clustering** | HDBSCAN (auto-detects # of clusters, handles noise) + TF-IDF cluster naming |
 | **Sentiment** | ProsusAI/FinBERT (fine-tuned on financial text) |
 | **Backend API** | FastAPI + Pydantic + SlowAPI (Rate Limiting) |
-| **Frontend** | Streamlit + Plotly |
+| **Frontend** | Streamlit,Next.js |
 | **Database** | SQLAlchemy (SQLite local / PostgreSQL production) |
 | **Data Source** | NewsAPI + RSS (financial news) with APScheduler & RapidFuzz deduplication |
 | **Real-time** | Server-Sent Events (SSE) for pipeline streaming |
