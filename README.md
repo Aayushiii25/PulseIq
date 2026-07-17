@@ -1,6 +1,6 @@
 # PulseIQ — Financial Narrative Intelligence Platform
 
-![PulseIQ Dashboard](dashboard1.png)
+
 
 > **Discover emerging market themes from global financial news using ML clustering, transformer embeddings, and FinBERT sentiment analysis.**
 
