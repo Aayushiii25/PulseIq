@@ -6,6 +6,18 @@
 
 ---
 
+## 🎬 Demo
+
+<div align="center">
+
+<video src="assests/pulseiq.mp4" controls width="100%" style="max-width:900px;border-radius:12px;"></video>
+
+> 📽️ Can't see the video? [**Click here to watch the demo**](assests/pulseiq.mp4)
+
+</div>
+
+---
+
 ## What It Does
 
 PulseIQ ingests hundreds of financial news articles, converts them into semantic vectors, clusters related stories into narrative themes, scores each article's sentiment, and visualises everything through a real-time interactive dashboard.
